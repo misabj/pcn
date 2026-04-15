@@ -1,0 +1,281 @@
+{
+    "nav": {
+        "home": "Главная",
+        "services": "Услуги",
+        "portfolio": "Портфолио",
+        "about": "О нас",
+        "contact": "Контакт"
+    },
+    "hero": {
+        "title": "Мы создаём цифровой опыт, который объединяет",
+        "subtitle": "PCN — агентство из Белграда, специализирующееся на создании сайтов, мобильных и веб-приложений, которые приносят результаты.",
+        "cta_portfolio": "Смотреть наши работы",
+        "cta_contact": "Связаться с нами",
+        "scroll_down": "Прокрутите вниз"
+    },
+    "services": {
+        "title": "Наши услуги",
+        "subtitle": "От идеи до реализации — мы охватываем каждый этап цифрового процесса.",
+        "websites": {
+            "title": "Разработка сайтов",
+            "desc": "Быстрые, SEO-оптимизированные сайты на заказ",
+            "bullets": [
+                "Адаптивный дизайн для всех устройств",
+                "Оптимизированная скорость загрузки",
+                "SEO-дружественный контент",
+                "Интеграция CMS"
+            ]
+        },
+        "mobile": {
+            "title": "Мобильные приложения",
+            "desc": "iOS и Android нативные и кроссплатформенные",
+            "bullets": [
+                "React Native и Flutter",
+                "UI/UX дизайн с учётом платформы",
+                "Push-уведомления и аналитика",
+                "Публикация в App Store и Google Play"
+            ]
+        },
+        "webapps": {
+            "title": "Веб-приложения",
+            "desc": "SaaS и корпоративные решения",
+            "bullets": [
+                "Индивидуальная архитектура",
+                "Масштабируемые облачные решения",
+                "Интеграции API",
+                "Админ-панели и дашборды"
+            ]
+        },
+        "learn_more": "Узнать больше"
+    },
+    "stats": {
+        "projects": "Завершённых проектов",
+        "years": "Лет опыта",
+        "clients": "Довольных клиентов",
+        "markets": "Рынков"
+    },
+    "portfolio": {
+        "title": "Наше портфолио",
+        "subtitle": "Посмотрите на некоторые проекты, которыми мы гордимся.",
+        "filter_all": "Все",
+        "filter_websites": "Сайты",
+        "filter_mobile": "Мобильные",
+        "filter_webapps": "Веб-приложения",
+        "view_project": "Смотреть проект",
+        "technologies": "Технологии",
+        "projects": [
+            {
+                "name": "Smashburger",
+                "desc": "Web aplikacija za naručivanje burgera.",
+                "tech": [
+                    "React",
+                    "Node.js",
+                    "MongoDB"
+                ],
+                "category": "webapps",
+                "url": "https://smashburger.pcn.rs/",
+                "image": "/projects/burger.jpeg"
+            },
+            {
+                "name": "Realestate",
+                "desc": "Prezentacioni sajt za nekretnine u Crnoj Gori.",
+                "tech": [
+                    "React",
+                    "Vite",
+                    "EmailJS"
+                ],
+                "category": "websites",
+                "url": "https://liveinboka.com/",
+                "image": "/projects/apartment.png"
+            },
+            {
+                "name": "DotConnection",
+                "desc": "Spajamo poslodavce iz regiona sa radnicima iz celog sveta",
+                "tech": [
+                    "React",
+                    "Vite"
+                ],
+                "category": "websites",
+                "url": "https://dotconnection.pcn.rs/",
+                "image": "/projects/dotconnection.png"
+            },
+            {
+                "name": "Portfolio",
+                "desc": "Lični portfolio sajt i blog.",
+                "tech": [
+                    "React",
+                    "Vite",
+                    "CSS Modules"
+                ],
+                "category": "websites",
+                "url": "https://nikolicmilos.com/",
+                "image": "/projects/portfolio.png"
+            },
+            {
+                "name": "Troškovi",
+                "desc": "Pametniji tok novca.",
+                "tech": [
+                    "React",
+                    "Node.js"
+                ],
+                "category": "mobile",
+                "url": "https://troskovi.pcn.rs/login",
+                "image": "/projects/troskovi.png"
+            },
+            {
+                "name": "Rekordi",
+                "desc": "Sistem za praćenje sportskih rezultata i rekorda.",
+                "tech": [
+                    "React",
+                    "Node.js",
+                    "MongoDB"
+                ],
+                "category": "webapps",
+                "url": "https://rekordi.pcn.rs/login",
+                "image": "/projects/rekordi.png"
+            },
+            {
+                "name": "Zamah media",
+                "desc": "Gradimo online prisustvo brendova sa smislom.",
+                "tech": [
+                    "React"
+                ],
+                "category": "webapps",
+                "url": "https://zamah.pcn.rs/",
+                "image": "/projects/logo_zamah.png"
+            }
+        ]
+    },
+    "process": {
+        "title": "Наш рабочий процесс",
+        "subtitle": "Прозрачный и эффективный подход к каждому проекту.",
+        "steps": [
+            {
+                "title": "Анализ",
+                "desc": "Мы понимаем ваши потребности, цели и целевую аудиторию."
+            },
+            {
+                "title": "Дизайн",
+                "desc": "Мы создаём вайрфреймы и UI-дизайн, который впечатляет."
+            },
+            {
+                "title": "Разработка",
+                "desc": "Мы программируем по высшим стандартам индустрии."
+            },
+            {
+                "title": "Запуск",
+                "desc": "Деплой в продакшн и непрерывная поддержка."
+            }
+        ]
+    },
+    "about": {
+        "title": "О нас",
+        "subtitle": "Познакомьтесь с командой PCN.",
+        "story": "PCN (Pixel | Code | Network) — веб-агентство из Белграда, основанное с видением того, что цифровые решения должны быть доступными, функциональными и эстетически превосходными. Более 8 лет опыта, наша команда экспертов работает над проектами для клиентов из Сербии, Германии и других стран.",
+        "team": [
+            {
+                "name": "Марко Петрович",
+                "role": "CEO и Fullstack-разработчик",
+                "bio": "10+ лет опыта в веб-разработке. Руководит стратегическими партнёрствами и технической архитектурой."
+            },
+            {
+                "name": "Ана Йованович",
+                "role": "Ведущий дизайнер",
+                "bio": "Специализируется на UI/UX-дизайне с фокусом на пользовательский опыт."
+            },
+            {
+                "name": "Никола Джорджевич",
+                "role": "Мобильный разработчик",
+                "bio": "Эксперт по React Native и Flutter. Разрабатывает производительные мобильные приложения."
+            }
+        ]
+    },
+    "testimonials": {
+        "title": "Что говорят наши клиенты",
+        "subtitle": "Отзывы тех, кто доверился нам.",
+        "items": [
+            {
+                "name": "Стефан Маркович",
+                "company": "TechStart d.o.o.",
+                "text": "Команда PCN превзошла все наши ожидания. Сайт быстрый, современный и привлекает клиентов.",
+                "rating": 5
+            },
+            {
+                "name": "Елена Николич",
+                "company": "Клиника Плюс",
+                "text": "Профессиональный подход от начала до конца. Рекомендую всем, кто ищет качество.",
+                "rating": 5
+            },
+            {
+                "name": "Милан Стоянович",
+                "company": "FitTrack",
+                "text": "Приложение интуитивное, и пользователи его обожают. Отличная работа!",
+                "rating": 5
+            },
+            {
+                "name": "Ивана Попович",
+                "company": "Legal Solutions",
+                "text": "CRM-система, которую они создали, значительно улучшила наш бизнес.",
+                "rating": 4
+            }
+        ]
+    },
+    "cta": {
+        "title": "Готовы к следующему проекту?",
+        "subtitle": "Свяжитесь с нами, и вместе мы превратим вашу идею в реальность.",
+        "button": "Начать разговор"
+    },
+    "contact": {
+        "title": "Свяжитесь с нами",
+        "subtitle": "Напишите нам — мы будем рады обсудить ваш проект.",
+        "form": {
+            "name": "Полное имя",
+            "email": "Электронная почта",
+            "phone": "Телефон",
+            "project_type": "Тип проекта",
+            "project_types": {
+                "website": "Сайт",
+                "mobile": "Мобильное приложение",
+                "webapp": "Веб-приложение",
+                "other": "Другое"
+            },
+            "message": "Ваше сообщение",
+            "submit": "Отправить сообщение",
+            "sending": "Отправка...",
+            "success": "Сообщение успешно отправлено!",
+            "error": "Произошла ошибка. Пожалуйста, попробуйте снова.",
+            "validation": {
+                "name_required": "Имя обязательно",
+                "email_required": "Электронная почта обязательна",
+                "email_invalid": "Введите действительный адрес электронной почты",
+                "message_required": "Сообщение обязательно"
+            }
+        },
+        "info": {
+            "address": "Белград, Сербия",
+            "email": "info@pcn.rs",
+            "phone": "+381 11 123 4567",
+            "hours": "Пн — Пт: 09:00 — 17:00"
+        }
+    },
+    "footer": {
+        "tagline": "Pixel | Code | Network — Ваш цифровой партнёр из Белграда.",
+        "services": "Услуги",
+        "company": "Компания",
+        "legal": "Правовая информация",
+        "contact": "Контакт",
+        "links": {
+            "websites": "Разработка сайтов",
+            "mobile": "Мобильные приложения",
+            "webapps": "Веб-приложения",
+            "about": "О нас",
+            "portfolio": "Портфолио",
+            "careers": "Карьера",
+            "privacy": "Политика конфиденциальности",
+            "terms": "Условия использования",
+            "cookies": "Cookies"
+        },
+        "made_with": "Сделано с ❤️ в Белграде",
+        "rights": "Все права защищены."
+    }
+}

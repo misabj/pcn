@@ -1,0 +1,109 @@
+.section {
+    padding: 5rem 0;
+    overflow: hidden;
+}
+
+.carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    position: relative;
+}
+
+.track {
+    overflow: hidden;
+}
+
+.slide {
+    text-align: center;
+    padding: 2rem;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 0.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.star {
+    color: var(--accent-yellow);
+    font-size: 1.25rem;
+}
+
+.starEmpty {
+    color: var(--border);
+}
+
+.text {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.text::before {
+    content: '"';
+    color: var(--accent-blue);
+    font-size: 2rem;
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 0;
+    vertical-align: -0.25em;
+    margin-right: 0.25rem;
+}
+
+.text::after {
+    content: '"';
+    color: var(--accent-blue);
+    font-size: 2rem;
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 0;
+    vertical-align: -0.25em;
+    margin-left: 0.25rem;
+}
+
+.author {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.company {
+    color: var(--accent-purple);
+    font-size: 0.875rem;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--border);
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 0;
+}
+
+.dotActive {
+    background: var(--accent-blue);
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .slide {
+        padding: 1rem;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+}

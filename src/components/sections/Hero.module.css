@@ -1,0 +1,266 @@
+.hero {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: var(--gradient-hero);
+}
+
+.videoBg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.videoBg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.videoOverlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 15, 30, 0.75);
+    z-index: 1;
+}
+
+[data-theme="light"] .videoOverlay {
+    background: rgba(245, 245, 245, 0.8);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.content h1 {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 1.25rem;
+    background: var(--gradient-cta);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.content p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    max-width: 500px;
+}
+
+.ctas {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.editor {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+}
+
+.editorHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: var(--bg-tertiary);
+    border-bottom: 1px solid var(--border);
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.dotRed {
+    background: #FF5F57;
+}
+
+.dotYellow {
+    background: #FEBC2E;
+}
+
+.dotGreen {
+    background: #28C840;
+}
+
+.editorTab {
+    margin-left: 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.editorBody {
+    padding: 1.25rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    line-height: 1.8;
+}
+
+.line {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.lineNum {
+    color: var(--text-secondary);
+    user-select: none;
+    min-width: 20px;
+    text-align: right;
+    opacity: 0.5;
+}
+
+.keyword {
+    color: var(--accent-blue);
+}
+
+.func {
+    color: var(--accent-purple);
+}
+
+.str {
+    color: var(--accent-green);
+}
+
+.variable {
+    color: var(--accent-yellow);
+}
+
+.constant {
+    color: var(--accent-orange);
+}
+
+.comment {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.bracket {
+    color: var(--text-primary);
+}
+
+.cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1.1em;
+    background: var(--accent-blue);
+    animation: blink 1s step-end infinite;
+    vertical-align: middle;
+    margin-left: 2px;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    z-index: 2;
+}
+
+.scrollIcon {
+    width: 24px;
+    height: 36px;
+    border: 2px solid var(--text-secondary);
+    border-radius: 12px;
+    position: relative;
+}
+
+.scrollDot {
+    width: 4px;
+    height: 8px;
+    background: var(--text-secondary);
+    border-radius: 2px;
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scrollDown 1.5s ease-in-out infinite;
+}
+
+.particles {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--accent-blue);
+    opacity: 0.15;
+    user-select: none;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .ctas {
+        justify-content: center;
+    }
+
+    .editor {
+        display: none;
+    }
+
+    .scroll {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .editorBody {
+        font-size: 0.75rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1320px;
+    }
+}

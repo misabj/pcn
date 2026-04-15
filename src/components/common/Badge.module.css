@@ -1,0 +1,29 @@
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    font-family: 'JetBrains Mono', monospace;
+    background: rgba(86, 156, 214, 0.15);
+    color: var(--accent-blue);
+    border: 1px solid rgba(86, 156, 214, 0.3);
+}
+
+.green {
+    background: rgba(78, 201, 176, 0.15);
+    color: var(--accent-green);
+    border-color: rgba(78, 201, 176, 0.3);
+}
+
+.purple {
+    background: rgba(197, 134, 192, 0.15);
+    color: var(--accent-purple);
+    border-color: rgba(197, 134, 192, 0.3);
+}
+
+.orange {
+    background: rgba(206, 145, 120, 0.15);
+    color: var(--accent-orange);
+    border-color: rgba(206, 145, 120, 0.3);
+}

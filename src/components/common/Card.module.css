@@ -1,0 +1,40 @@
+.card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-border);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--accent-blue);
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.gradient {
+    background: var(--gradient-card);
+}
+
+.tilt {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}

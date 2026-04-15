@@ -1,0 +1,119 @@
+.footer {
+    background: var(--bg-secondary);
+    border-top: 3px solid transparent;
+    border-image: var(--gradient-border) 1;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.brand .logo {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-blue);
+    margin-bottom: 0.75rem;
+}
+
+.tagline {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.social {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.socialLink {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: var(--bg-tertiary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-size: 0.85rem;
+}
+
+.socialLink:hover {
+    background: var(--accent-blue);
+    color: #fff;
+}
+
+.column h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.column a {
+    display: block;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    margin-bottom: 0.6rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.column a:hover {
+    color: var(--accent-blue);
+}
+
+.bottom {
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.copyright {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+}
+
+.madeWith {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    .top {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1440px) {
+    .inner {
+        max-width: 1320px;
+    }
+}

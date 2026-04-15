@@ -1,0 +1,93 @@
+.section {
+    padding: 5rem 0;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    left: 50px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--border);
+    border-radius: 3px;
+}
+
+.progress {
+    position: absolute;
+    left: 50px;
+    top: 0;
+    width: 3px;
+    background: var(--gradient-cta);
+    border-radius: 3px;
+    transition: height 0.6s ease;
+}
+
+.step {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.step:last-child {
+    margin-bottom: 0;
+}
+
+.number {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background: var(--bg-secondary);
+    border: 3px solid var(--border);
+    color: var(--text-secondary);
+    flex-shrink: 0;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.numberActive {
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
+    box-shadow: 0 0 20px rgba(86, 156, 214, 0.3);
+}
+
+.content {
+    padding-top: 0.75rem;
+}
+
+.content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.content p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .number {
+        width: 44px;
+        height: 44px;
+        font-size: 1rem;
+    }
+
+    .line,
+    .progress {
+        left: 45px;
+    }
+}

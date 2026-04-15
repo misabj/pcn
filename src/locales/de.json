@@ -1,0 +1,281 @@
+{
+    "nav": {
+        "home": "Startseite",
+        "services": "Leistungen",
+        "portfolio": "Referenzen",
+        "about": "Über uns",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "title": "Wir bauen digitale Erlebnisse, die verbinden",
+        "subtitle": "PCN ist eine Agentur aus Belgrad, spezialisiert auf Websites, mobile und Webanwendungen, die Ergebnisse liefern.",
+        "cta_portfolio": "Unsere Arbeit ansehen",
+        "cta_contact": "Kontaktieren Sie uns",
+        "scroll_down": "Nach unten scrollen"
+    },
+    "services": {
+        "title": "Unsere Leistungen",
+        "subtitle": "Von der Idee bis zur Umsetzung — wir decken jeden Schritt des digitalen Prozesses ab.",
+        "websites": {
+            "title": "Webentwicklung",
+            "desc": "Schnelle, SEO-optimierte maßgeschneiderte Websites",
+            "bullets": [
+                "Responsives Design für alle Geräte",
+                "Optimierte Ladegeschwindigkeit",
+                "SEO-freundliche Inhalte",
+                "CMS-Integration"
+            ]
+        },
+        "mobile": {
+            "title": "Mobile Anwendungen",
+            "desc": "iOS & Android nativ und plattformübergreifend",
+            "bullets": [
+                "React Native & Flutter",
+                "Plattformgerechtes UI/UX-Design",
+                "Push-Benachrichtigungen und Analysen",
+                "Veröffentlichung im App Store und Google Play"
+            ]
+        },
+        "webapps": {
+            "title": "Webanwendungen",
+            "desc": "SaaS- und Enterprise-Lösungen",
+            "bullets": [
+                "Individuelle Architektur",
+                "Skalierbare Cloud-Lösungen",
+                "API-Integrationen",
+                "Admin-Panels und Dashboards"
+            ]
+        },
+        "learn_more": "Mehr erfahren"
+    },
+    "stats": {
+        "projects": "Abgeschlossene Projekte",
+        "years": "Jahre Erfahrung",
+        "clients": "Zufriedene Kunden",
+        "markets": "Märkte"
+    },
+    "portfolio": {
+        "title": "Unsere Referenzen",
+        "subtitle": "Sehen Sie sich einige Projekte an, auf die wir stolz sind.",
+        "filter_all": "Alle",
+        "filter_websites": "Websites",
+        "filter_mobile": "Mobile Apps",
+        "filter_webapps": "Web-Apps",
+        "view_project": "Projekt ansehen",
+        "technologies": "Technologien",
+         "projects": [
+            {
+                "name": "Smashburger",
+                "desc": "Web aplikacija za naručivanje burgera.",
+                "tech": [
+                    "React",
+                    "Node.js",
+                    "MongoDB"
+                ],
+                "category": "webapps",
+                "url": "https://smashburger.pcn.rs/",
+                "image": "/projects/burger.jpeg"
+            },
+            {
+                "name": "Realestate",
+                "desc": "Prezentacioni sajt za nekretnine u Crnoj Gori.",
+                "tech": [
+                    "React",
+                    "Vite",
+                    "EmailJS"
+                ],
+                "category": "websites",
+                "url": "https://liveinboka.com/",
+                "image": "/projects/apartment.png"
+            },
+            {
+                "name": "DotConnection",
+                "desc": "Spajamo poslodavce iz regiona sa radnicima iz celog sveta",
+                "tech": [
+                    "React",
+                    "Vite"
+                ],
+                "category": "websites",
+                "url": "https://dotconnection.pcn.rs/",
+                "image": "/projects/dotconnection.png"
+            },
+            {
+                "name": "Portfolio",
+                "desc": "Lični portfolio sajt i blog.",
+                "tech": [
+                    "React",
+                    "Vite",
+                    "CSS Modules"
+                ],
+                "category": "websites",
+                "url": "https://nikolicmilos.com/",
+                "image": "/projects/portfolio.png"
+            },
+            {
+                "name": "Troškovi",
+                "desc": "Pametniji tok novca.",
+                "tech": [
+                    "React",
+                    "Node.js"
+                ],
+                "category": "mobile",
+                "url": "https://troskovi.pcn.rs/login",
+                "image": "/projects/troskovi.png"
+            },
+            {
+                "name": "Rekordi",
+                "desc": "Sistem za praćenje sportskih rezultata i rekorda.",
+                "tech": [
+                    "React",
+                    "Node.js",
+                    "MongoDB"
+                ],
+                "category": "webapps",
+                "url": "https://rekordi.pcn.rs/login",
+                "image": "/projects/rekordi.png"
+            },
+            {
+                "name": "Zamah media",
+                "desc": "Gradimo online prisustvo brendova sa smislom.",
+                "tech": [
+                    "React"
+                ],
+                "category": "webapps",
+                "url": "https://zamah.pcn.rs/",
+                "image": "/projects/logo_zamah.png"
+            }
+        ]
+    },
+    "process": {
+        "title": "Unser Arbeitsprozess",
+        "subtitle": "Ein transparenter und effizienter Ansatz für jedes Projekt.",
+        "steps": [
+            {
+                "title": "Analyse",
+                "desc": "Wir verstehen Ihre Bedürfnisse, Ziele und Zielgruppe."
+            },
+            {
+                "title": "Design",
+                "desc": "Wir erstellen Wireframes und UI-Design, das beeindruckt."
+            },
+            {
+                "title": "Entwicklung",
+                "desc": "Wir programmieren nach höchsten Branchenstandards."
+            },
+            {
+                "title": "Launch",
+                "desc": "Deployment in Produktion und kontinuierlicher Support."
+            }
+        ]
+    },
+    "about": {
+        "title": "Über uns",
+        "subtitle": "Lernen Sie das Team hinter PCN kennen.",
+        "story": "PCN (Pixel | Code | Network) ist eine Webagentur aus Belgrad, gegründet mit der Vision, dass digitale Lösungen zugänglich, funktional und ästhetisch überlegen sein sollten. Mit über 8 Jahren Erfahrung arbeitet unser Expertenteam an Projekten für Kunden aus Serbien, Deutschland und darüber hinaus.",
+        "team": [
+            {
+                "name": "Miloš Nikolić",
+                "role": "CEO & Fullstack-Entwickler",
+                "bio": "10+ Jahre Erfahrung in der Webentwicklung. Leitet strategische Partnerschaften und technische Architektur."
+            },
+            {
+                "name": "Milan Čučković",
+                "role": "Lead Designer",
+                "bio": "Spezialisiert auf UI/UX-Design mit Fokus auf Benutzererfahrung."
+            },
+            {
+                "name": "Milan Pantović",
+                "role": "Mobile Entwickler",
+                "bio": "Experte für React Native und Flutter. Entwickelt performante mobile Anwendungen."
+            }
+        ]
+    },
+    "testimonials": {
+        "title": "Was unsere Kunden sagen",
+        "subtitle": "Feedback von denen, die uns ihr Vertrauen geschenkt haben.",
+        "items": [
+            {
+                "name": "Stefan Marković",
+                "company": "TechStart d.o.o.",
+                "text": "Das PCN-Team hat alle unsere Erwartungen übertroffen. Die Website ist schnell, modern und zieht Kunden an.",
+                "rating": 5
+            },
+            {
+                "name": "Jelena Nikolić",
+                "company": "Klinik Plus",
+                "text": "Professioneller Ansatz von Anfang bis Ende. Ich empfehle sie jedem, der Qualität sucht.",
+                "rating": 5
+            },
+            {
+                "name": "Milan Stojanović",
+                "company": "FitTrack",
+                "text": "Die App ist intuitiv und die Nutzer lieben sie. Tolle Arbeit!",
+                "rating": 5
+            },
+            {
+                "name": "Ivana Popović",
+                "company": "Legal Solutions",
+                "text": "Das CRM-System, das sie entwickelt haben, hat unser Geschäft erheblich verbessert.",
+                "rating": 4
+            }
+        ]
+    },
+    "cta": {
+        "title": "Bereit für Ihr nächstes Projekt?",
+        "subtitle": "Kontaktieren Sie uns und gemeinsam verwandeln wir Ihre Idee in Realität.",
+        "button": "Gespräch starten"
+    },
+    "contact": {
+        "title": "Kontaktieren Sie uns",
+        "subtitle": "Schreiben Sie uns — wir sprechen gerne über Ihr Projekt.",
+        "form": {
+            "name": "Vollständiger Name",
+            "email": "E-Mail-Adresse",
+            "phone": "Telefon",
+            "project_type": "Projekttyp",
+            "project_types": {
+                "website": "Website",
+                "mobile": "Mobile Anwendung",
+                "webapp": "Webanwendung",
+                "other": "Sonstiges"
+            },
+            "message": "Ihre Nachricht",
+            "submit": "Nachricht senden",
+            "sending": "Wird gesendet...",
+            "success": "Nachricht erfolgreich gesendet!",
+            "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+            "validation": {
+                "name_required": "Name ist erforderlich",
+                "email_required": "E-Mail ist erforderlich",
+                "email_invalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+                "message_required": "Nachricht ist erforderlich"
+            }
+        },
+        "info": {
+            "address": "Belgrad, Serbien",
+            "email": "info@pcn.rs",
+            "phone": "+381 11 123 4567",
+            "hours": "Mo — Fr: 09:00 — 17:00"
+        }
+    },
+    "footer": {
+        "tagline": "Pixel | Code | Network — Ihr digitaler Partner aus Belgrad.",
+        "services": "Leistungen",
+        "company": "Unternehmen",
+        "legal": "Rechtliches",
+        "contact": "Kontakt",
+        "links": {
+            "websites": "Webentwicklung",
+            "mobile": "Mobile Anwendungen",
+            "webapps": "Webanwendungen",
+            "about": "Über uns",
+            "portfolio": "Referenzen",
+            "careers": "Karriere",
+            "privacy": "Datenschutz",
+            "terms": "Nutzungsbedingungen",
+            "cookies": "Cookies"
+        },
+        "made_with": "Mit ❤️ in Belgrad gemacht",
+        "rights": "Alle Rechte vorbehalten."
+    }
+}
