@@ -7,13 +7,15 @@
         "contact": "Контакт"
     },
     "hero": {
+        "label": "Digital агентство",
         "title": "Мы создаём цифровой опыт, который объединяет",
-        "subtitle": "PCN — агентство из Белграда, специализирующееся на создании сайтов, мобильных и веб-приложений, которые приносят результаты.",
+        "subtitle": "PCN — цифровое агентство, специализирующееся на создании сайтов, мобильных и веб-приложений, которые приносят результаты.",
         "cta_portfolio": "Смотреть наши работы",
         "cta_contact": "Связаться с нами",
-        "scroll_down": "Прокрутите вниз"
+        "scroll_down": "Скролл"
     },
     "services": {
+        "label": "Что мы делаем",
         "title": "Наши услуги",
         "subtitle": "От идеи до реализации — мы охватываем каждый этап цифрового процесса.",
         "websites": {
@@ -55,6 +57,7 @@
         "markets": "Рынков"
     },
     "portfolio": {
+        "label": "Избранные работы",
         "title": "Наше портфолио",
         "subtitle": "Посмотрите на некоторые проекты, которыми мы гордимся.",
         "filter_all": "Все",
@@ -74,7 +77,7 @@
                 ],
                 "category": "webapps",
                 "url": "https://smashburger.pcn.rs/",
-                "image": "/projects/burger.jpeg"
+                "image": "/projects/smashburger-photo.png"
             },
             {
                 "name": "Realestate",
@@ -86,7 +89,7 @@
                 ],
                 "category": "websites",
                 "url": "https://liveinboka.com/",
-                "image": "/projects/apartment.png"
+                "image": "/projects/realestate-photo.png"
             },
             {
                 "name": "DotConnection",
@@ -97,7 +100,7 @@
                 ],
                 "category": "websites",
                 "url": "https://dotconnection.pcn.rs/",
-                "image": "/projects/dotconnection.png"
+                "image": "/projects/dotconnection-photo.png"
             },
             {
                 "name": "Portfolio",
@@ -109,7 +112,7 @@
                 ],
                 "category": "websites",
                 "url": "https://nikolicmilos.com/",
-                "image": "/projects/portfolio.png"
+                "image": "/projects/portfolio-photo.png"
             },
             {
                 "name": "Parem",
@@ -120,7 +123,7 @@
                 ],
                 "category": "webapps",
                 "url": "https://parem.pcn.rs/",
-                "image": "/projects/parem_logo.png"
+                "image": "/projects/parem-photo.png"
             },
             {
                 "name": "RadiSad",
@@ -130,7 +133,7 @@
                 ],
                 "category": "websites",
                 "url": "https://radisad.rs/",
-                "image": "/projects/radisad_logo.png"
+                "image": "/projects/radisad-photo.png"
             },
             {
                 "name": "Zamah media",
@@ -140,7 +143,7 @@
                 ],
                 "category": "webapps",
                 "url": "https://zamah.pcn.rs/",
-                "image": "/projects/logo_zamah.png"
+                "image": "/projects/zamahmedia-photo.png"
             },
             {
                 "name": "Magic Crystals",
@@ -150,7 +153,7 @@
                 ],
                 "category": "websites",
                 "url": "https://magiccrystals.rs/",
-                "image": "/projects/magic_logo.png"
+                "image": "/projects/magiccrystals-photo.png"
             },
             {
                 "name": "Jarac",
@@ -160,7 +163,7 @@
                 ],
                 "category": "websites",
                 "url": "https://jarac.rs/",
-                "image": "/projects/jarac_logo.png"
+                "image": "/projects/jarac-photo.png"
             },
             {
                 "name": "E Commerce",
@@ -170,7 +173,7 @@
                 ],
                 "category": "websites",
                 "url": "https://ecommerce.pcn.rs/",
-                "image": "/projects/ecommerce_logo.png"
+                "image": "/projects/ecommerce-photo.png"
             },
             {
                 "name": "Marko Fizio",
@@ -181,11 +184,12 @@
                 ],
                 "category": "websites",
                 "url": "https://fizio.pcn.rs/",
-                "image": "/projects/fizio_logo.png"
+                "image": "/projects/markofizio-photo.png"
             }
         ]
     },
     "process": {
+        "label": "Как мы работаем",
         "title": "Наш рабочий процесс",
         "subtitle": "Прозрачный и эффективный подход к каждому проекту.",
         "steps": [
@@ -210,7 +214,10 @@
     "about": {
         "title": "О нас",
         "subtitle": "Познакомьтесь с командой PCN.",
-        "story": "PCN (Pixel | Code | Network) — веб-агентство из Белграда, основанное с видением того, что цифровые решения должны быть доступными, функциональными и эстетически превосходными. Более 8 лет опыта, наша команда экспертов работает над проектами для клиентов из Сербии, Германии и других стран.",
+        "statement": "PCN — независимое цифровое студия, создающее осмысленный бренд-опыт через стратегию, дизайн и технологии.",
+        "statement2": "Мы проектируем на долгосрочную перспективу — ясность прежде всего, масштабируемо.",
+        "tech_title": "Технологии",
+        "story": "PCN (Pixel | Code | Network) — веб-агентство, основанное с видением того, что цифровые решения должны быть доступными, функциональными и эстетически превосходными. Более 8 лет опыта, наша команда экспертов работает над проектами для клиентов из Сербии, Германии и других стран.",
         "team": [
             {
                 "name": "Марко Петрович",
@@ -230,6 +237,7 @@
         ]
     },
     "testimonials": {
+        "label": "Отзывы",
         "title": "Что говорят наши клиенты",
         "subtitle": "Отзывы тех, кто доверился нам.",
         "items": [
@@ -260,11 +268,13 @@
         ]
     },
     "cta": {
-        "title": "Готовы к следующему проекту?",
+        "title": "Готовы создать что-то значимое?",
+        "title2": "Давайте создадим вместе.",
         "subtitle": "Свяжитесь с нами, и вместе мы превратим вашу идею в реальность.",
         "button": "Начать разговор"
     },
     "contact": {
+        "label": "Контакт",
         "title": "Свяжитесь с нами",
         "subtitle": "Напишите нам — мы будем рады обсудить ваш проект.",
         "form": {
@@ -291,14 +301,28 @@
             }
         },
         "info": {
+            "address_label": "Адрес",
             "address": "Белград, Сербия",
             "email": "info@pcn.rs",
+            "phone_label": "Телефон",
             "phone": "+381 11 123 4567",
+            "hours_label": "Рабочее время",
             "hours": "Пн — Пт: 09:00 — 17:00"
         }
     },
+    "marquee": {
+        "items": [
+            "Разработка сайтов",
+            "Мобильные приложения",
+            "Веб-приложения",
+            "UI/UX дизайн",
+            "Брендинг",
+            "Цифровая стратегия",
+            "PCN"
+        ]
+    },
     "footer": {
-        "tagline": "Pixel | Code | Network — Ваш цифровой партнёр из Белграда.",
+        "tagline": "Pixel | Code | Network — Ваш цифровой партнёр.",
         "services": "Услуги",
         "company": "Компания",
         "legal": "Правовая информация",
@@ -314,7 +338,6 @@
             "terms": "Условия использования",
             "cookies": "Cookies"
         },
-        "made_with": "Сделано с ❤️ в Белграде",
         "rights": "Все права защищены."
     }
 }

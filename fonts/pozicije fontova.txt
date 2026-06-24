@@ -1,0 +1,10 @@
+_ZA NASLOVE I PODNASLOVE
+
+CenturyGothicPaneuropeanRegular
+
+_ZA BODY TEKST
+(kombinovati debljine)
+
+IBMPlexMono-Regular
++
+IBMPlexMono-Light

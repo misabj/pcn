@@ -1,20 +1,9 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useEffect } from 'react'
 
 export function useTheme() {
-  const [theme, setTheme] = useState(() => {
-    const saved = localStorage.getItem('pcn-theme')
-    if (saved) return saved
-    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
-  })
-
   useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme)
-    localStorage.setItem('pcn-theme', theme)
-  }, [theme])
-
-  const toggleTheme = useCallback(() => {
-    setTheme(prev => prev === 'dark' ? 'light' : 'dark')
+    document.documentElement.setAttribute('data-theme', 'dark')
   }, [])
 
-  return { theme, toggleTheme }
+  return { theme: 'dark', toggleTheme: () => {} }
 }

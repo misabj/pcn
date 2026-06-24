@@ -1,0 +1,31 @@
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 1.5rem 0;
+}
+
+.track {
+    display: inline-flex;
+    animation: marquee var(--duration) linear infinite;
+    animation-direction: var(--direction);
+}
+
+.content {
+    font-family: var(--font-heading);
+    font-size: clamp(1.25rem, 3vw, 2rem);
+    color: var(--text-secondary);
+    letter-spacing: -0.02em;
+    padding-right: 2rem;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

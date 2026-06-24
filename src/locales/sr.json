@@ -7,13 +7,15 @@
         "contact": "Kontakt"
     },
     "hero": {
+        "label": "Digitalna agencija",
         "title": "Gradimo digitalna iskustva koja povezuju",
-        "subtitle": "PCN je agencija iz Beograda specijalizovana za izradu sajtova, mobilnih i web aplikacija koje donose rezultate.",
+        "subtitle": "PCN je agencija specijalizovana za izradu sajtova, mobilnih i web aplikacija koje donose rezultate.",
         "cta_portfolio": "Pogledajte naš rad",
         "cta_contact": "Kontaktirajte nas",
-        "scroll_down": "Skrolujte nadole"
+        "scroll_down": "Skrol"
     },
     "services": {
+        "label": "Šta radimo",
         "title": "Naše usluge",
         "subtitle": "Od ideje do realizacije — pokrivamo svaki korak digitalnog procesa.",
         "websites": {
@@ -55,6 +57,7 @@
         "markets": "Tržišta"
     },
     "portfolio": {
+        "label": "Izabrani radovi",
         "title": "Naše reference",
         "subtitle": "Pogledajte neke od projekata na koje smo ponosni.",
         "filter_all": "Sve",
@@ -74,7 +77,7 @@
                 ],
                 "category": "webapps",
                 "url": "https://smashburger.pcn.rs/",
-                "image": "/projects/burger.jpeg"
+                "image": "/projects/smashburger-photo.png"
             },
             {
                 "name": "Realestate",
@@ -86,7 +89,7 @@
                 ],
                 "category": "websites",
                 "url": "https://liveinboka.com/",
-                "image": "/projects/apartment.png"
+                "image": "/projects/realestate-photo.png"
             },
             {
                 "name": "DotConnection",
@@ -97,7 +100,7 @@
                 ],
                 "category": "websites",
                 "url": "https://dotconnection.pcn.rs/",
-                "image": "/projects/dotconnection.png"
+                "image": "/projects/dotconnection-photo.png"
             },
             {
                 "name": "Portfolio",
@@ -109,7 +112,7 @@
                 ],
                 "category": "websites",
                 "url": "https://nikolicmilos.com/",
-                "image": "/projects/portfolio.png"
+                "image": "/projects/portfolio-photo.png"
             },
             {
                 "name": "Parem",
@@ -120,7 +123,7 @@
                 ],
                 "category": "webapps",
                 "url": "https://parem.pcn.rs/",
-                "image": "/projects/parem_logo.png"
+                "image": "/projects/parem-photo.png"
             },
             {
                 "name": "RadiSad",
@@ -130,7 +133,7 @@
                 ],
                 "category": "websites",
                 "url": "https://radisad.rs/",
-                "image": "/projects/radisad_logo.png"
+                "image": "/projects/radisad-photo.png"
             },
             {
                 "name": "Zamah media",
@@ -140,7 +143,7 @@
                 ],
                 "category": "webapps",
                 "url": "https://zamah.pcn.rs/",
-                "image": "/projects/logo_zamah.png"
+                "image": "/projects/zamahmedia-photo.png"
             },
             {
                 "name": "Mondo 33",
@@ -150,7 +153,7 @@
                 ],
                 "category": "webapps",
                 "url": "https://mondo33.com/",
-                "image": "/projects/mondo33.png"
+                "image": "/projects/mondo33-photo.png"
             },
             {
                 "name": "Magic Crystals",
@@ -160,7 +163,7 @@
                 ],
                 "category": "websites",
                 "url": "https://magiccrystals.rs/",
-                "image": "/projects/magic_logo.png"
+                "image": "/projects/magiccrystals-photo.png"
             },
             {
                 "name": "Jarac",
@@ -170,7 +173,7 @@
                 ],
                 "category": "websites",
                 "url": "https://jarac.rs/",
-                "image": "/projects/jarac_logo.png"
+                "image": "/projects/jarac-photo.png"
             },
             {
                 "name": "E Commerce",
@@ -180,7 +183,7 @@
                 ],
                 "category": "websites",
                 "url": "https://ecommerce.pcn.rs/",
-                "image": "/projects/ecommerce_logo.png"
+                "image": "/projects/ecommerce-photo.png"
             },
             {
                 "name": "Marko Fizio",
@@ -191,11 +194,12 @@
                 ],
                 "category": "websites",
                 "url": "https://fizio.pcn.rs/",
-                "image": "/projects/fizio_logo.png"
+                "image": "/projects/markofizio-photo.png"
             }
         ]
     },
     "process": {
+        "label": "Način rada",
         "title": "Naš proces rada",
         "subtitle": "Transparentan i efikasan pristup svakom projektu.",
         "steps": [
@@ -220,7 +224,10 @@
     "about": {
         "title": "O nama",
         "subtitle": "Upoznajte tim koji stoji iza PCN-a.",
-        "story": "PCN (Pixel | Code | Network) je web agencija iz Beograda osnovana sa vizijom da digitalna rešenja budu dostupna, funkcionalna i estetski superiorna. Sa više od 8 godina iskustva, naš tim stručnjaka radi na projektima za klijente iz Srbije, Nemačke, i šire.",
+        "statement": "PCN je digitalni studio koji stvara smislene brend doživljaje kroz strategiju, dizajn i tehnologiju.",
+        "statement2": "Dizajniramo dugoročno — jasnoća na prvom mestu, građeno za rast.",
+        "tech_title": "Tehnologije",
+        "story": "PCN (Pixel | Code | Network) je web agencija osnovana sa vizijom da digitalna rešenja budu dostupna, funkcionalna i estetski superiorna. Sa više od 8 godina iskustva, naš tim stručnjaka radi na projektima za klijente iz Srbije, Nemačke, i šire.",
         "team": [
             {
                 "name": "Miloš Nikolić",
@@ -240,6 +247,7 @@
         ]
     },
     "testimonials": {
+        "label": "Preporuke",
         "title": "Šta kažu naši klijenti",
         "subtitle": "Povratne informacije od onih koji su nam ukazali poverenje.",
         "items": [
@@ -270,11 +278,13 @@
         ]
     },
     "cta": {
-        "title": "Spremni ste za sledeći projekat?",
+        "title": "Spremni da izgradite nešto smisleno?",
+        "title2": "Hajde da kreiramo zajedno.",
         "subtitle": "Javite nam se i zajedno ćemo pretvoriti vašu ideju u realnost.",
         "button": "Započnite razgovor"
     },
     "contact": {
+        "label": "Kontakt",
         "title": "Kontaktirajte nas",
         "subtitle": "Javite nam se — rado ćemo razgovarati o vašem projektu.",
         "form": {
@@ -301,14 +311,28 @@
             }
         },
         "info": {
+            "address_label": "Adresa",
             "address": "Beograd, Srbija",
             "email": "info@pcn.rs",
+            "phone_label": "Telefon",
             "phone": "+381 11 123 4567",
+            "hours_label": "Radno vreme",
             "hours": "Pon — Pet: 09:00 — 17:00"
         }
     },
+    "marquee": {
+        "items": [
+            "Izrada sajtova",
+            "Mobilne aplikacije",
+            "Web aplikacije",
+            "UI/UX dizajn",
+            "Brending",
+            "Digitalna strategija",
+            "PCN"
+        ]
+    },
     "footer": {
-        "tagline": "Pixel | Code | Network — Vaš digitalni partner iz Beograda.",
+        "tagline": "Pixel | Code | Network — Vaš digitalni partner.",
         "services": "Usluge",
         "company": "Kompanija",
         "legal": "Pravno",
@@ -324,7 +348,6 @@
             "terms": "Uslovi korišćenja",
             "cookies": "Kolačići"
         },
-        "made_with": "Napravljeno sa ❤️ u Beogradu",
         "rights": "Sva prava zadržana."
     }
 }

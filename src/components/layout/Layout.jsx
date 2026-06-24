@@ -1,13 +1,16 @@
 import Navbar from './Navbar'
 import Footer from './Footer'
+import CustomCursor from '../common/CustomCursor'
+import styles from './Layout.module.css'
 
-export default function Layout({ children, theme, toggleTheme }) {
+export default function Layout({ children }) {
   return (
     <>
-      <Navbar theme={theme} toggleTheme={toggleTheme} />
-      <main style={{ paddingTop: '70px' }}>
-        {children}
-      </main>
+      <CustomCursor />
+      <div className={styles.grain} />
+      <div className={styles.ambientGlow} />
+      <Navbar />
+      <main>{children}</main>
       <Footer />
     </>
   )

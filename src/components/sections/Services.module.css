@@ -1,88 +1,132 @@
 .section {
-    padding: 5rem 0;
+    padding: 10rem 0;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: end;
+    margin-bottom: 5rem;
+}
+
+.intro {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    max-width: 420px;
+    justify-self: end;
+    font-weight: 300;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
+    gap: 0;
+    border-top: 1px solid var(--border);
 }
 
 .card {
-    text-align: center;
+    padding: 3rem 2rem;
+    border-bottom: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
 }
 
-.icon {
-    width: 64px;
-    height: 64px;
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 1.25rem;
-    font-size: 1.5rem;
-    font-family: 'JetBrains Mono', monospace;
-    font-weight: 700;
-    background: var(--gradient-card);
-    border: 1px solid var(--border);
+.card:last-child {
+    border-right: none;
 }
 
-.icon:nth-child(1) {
-    color: var(--accent-blue);
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--text-primary);
+    transform: scaleX(0);
+    transition: transform var(--transition-slow);
+}
+
+.card:hover::before {
+    transform: scaleX(1);
+}
+
+.card:hover {
+    background: var(--bg-card);
+}
+
+.number {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    display: block;
+    letter-spacing: 0.1em;
 }
 
 .title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
 }
 
 .desc {
     color: var(--text-secondary);
-    margin-bottom: 1rem;
-    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    font-weight: 300;
 }
 
 .bullets {
-    text-align: left;
-    margin-bottom: 1.5rem;
+    list-style: none;
 }
 
 .bullet {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.4rem;
-    font-size: 0.875rem;
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.8rem;
     color: var(--text-secondary);
+    font-weight: 300;
 }
 
-.bulletDot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--accent-green);
-    flex-shrink: 0;
+.bullet::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--text-muted);
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        border-right: none;
+    }
+
+    .header {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .intro {
+        justify-self: start;
+    }
 }
 
 @media (max-width: 768px) {
-    .grid {
-        grid-template-columns: 1fr;
-        max-width: 480px;
+    .section {
+        padding: 6rem 0;
     }
-}
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1440px) {
-    .grid {
-        max-width: 1320px;
+    .card {
+        padding: 2rem 1.25rem;
     }
 }

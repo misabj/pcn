@@ -1,6 +1,8 @@
 import { useState, useEffect, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useScrollAnimation } from '../../hooks/useScrollAnimation'
+import TextReveal from '../common/TextReveal'
 import styles from './Testimonials.module.css'
 
 export default function Testimonials() {
@@ -8,6 +10,7 @@ export default function Testimonials() {
   const items = t('testimonials.items', { returnObjects: true })
   const [current, setCurrent] = useState(0)
   const [paused, setPaused] = useState(false)
+  const { ref, isVisible } = useScrollAnimation()
 
   const next = useCallback(() => {
     setCurrent(prev => (prev + 1) % items.length)
@@ -15,7 +18,7 @@ export default function Testimonials() {
 
   useEffect(() => {
     if (paused) return
-    const timer = setInterval(next, 5000)
+    const timer = setInterval(next, 6000)
     return () => clearInterval(timer)
   }, [paused, next])
 
@@ -24,12 +27,25 @@ export default function Testimonials() {
   return (
     <section className={styles.section}>
       <div className="container">
-        <h2 className="section-title">{t('testimonials.title')}</h2>
-        <p className="section-subtitle">{t('testimonials.subtitle')}</p>
+        <motion.p
+          className="label"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          {t('testimonials.label', 'Testimonials')}
+        </motion.p>
+        <TextReveal as="h2" className="section-title" delay={0.1}>
+          {t('testimonials.title')}
+        </TextReveal>
       </div>
 
-      <div
+      <motion.div
+        ref={ref}
         className={styles.carousel}
+        initial={{ opacity: 0 }}
+        animate={isVisible ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ duration: 0.8 }}
         onMouseEnter={() => setPaused(true)}
         onMouseLeave={() => setPaused(false)}
       >
@@ -38,34 +54,32 @@ export default function Testimonials() {
             <motion.div
               key={current}
               className={styles.slide}
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -50 }}
-              transition={{ duration: 0.4 }}
+              initial={{ opacity: 0, y: 40, filter: 'blur(10px)' }}
+              animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+              exit={{ opacity: 0, y: -40, filter: 'blur(10px)' }}
+              transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             >
-              <div className={styles.stars}>
-                {[1, 2, 3, 4, 5].map(n => (
-                  <span key={n} className={n <= item.rating ? styles.star : `${styles.star} ${styles.starEmpty}`}>★</span>
-                ))}
-              </div>
               <p className={styles.text}>{item.text}</p>
-              <p className={styles.author}>{item.name}</p>
-              <p className={styles.company}>{item.company}</p>
+              <div className={styles.meta}>
+                <div className={styles.authorInfo}>
+                  <p className={styles.author}>{item.name}</p>
+                  <p className={styles.company}>{item.company}</p>
+                </div>
+                <div className={styles.dots}>
+                  {items.map((_, i) => (
+                    <button
+                      key={i}
+                      className={`${styles.dot} ${i === current ? styles.dotActive : ''}`}
+                      onClick={() => setCurrent(i)}
+                      aria-label={`Testimonial ${i + 1}`}
+                    />
+                  ))}
+                </div>
+              </div>
             </motion.div>
           </AnimatePresence>
         </div>
-
-        <div className={styles.dots}>
-          {items.map((_, i) => (
-            <button
-              key={i}
-              className={`${styles.dot} ${i === current ? styles.dotActive : ''}`}
-              onClick={() => setCurrent(i)}
-              aria-label={`Testimonial ${i + 1}`}
-            />
-          ))}
-        </div>
-      </div>
+      </motion.div>
     </section>
   )
 }

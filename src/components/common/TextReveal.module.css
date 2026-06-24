@@ -1,0 +1,12 @@
+.wrapper {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: baseline;
+    padding-bottom: 0.12em;
+    margin-bottom: -0.12em;
+}
+
+.inner {
+    display: inline-block;
+    line-height: inherit;
+}

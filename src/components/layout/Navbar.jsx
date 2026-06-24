@@ -2,9 +2,26 @@ import { useState, useEffect, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
 import { motion, AnimatePresence } from 'framer-motion'
 import { LANGUAGES, NAV_LINKS } from '../../utils/constants'
+import Magnetic from '../common/Magnetic'
 import styles from './Navbar.module.css'
 
-export default function Navbar({ theme, toggleTheme }) {
+function LanguageSwitcher({ currentLang, onChange }) {
+  return (
+    <div className={styles.langSwitcher}>
+      {LANGUAGES.map(({ code, label }) => (
+        <button
+          key={code}
+          className={`${styles.langBtn} ${currentLang === code ? styles.langBtnActive : ''}`}
+          onClick={() => onChange(code)}
+        >
+          {label}
+        </button>
+      ))}
+    </div>
+  )
+}
+
+export default function Navbar() {
   const { t, i18n } = useTranslation()
   const [scrolled, setScrolled] = useState(false)
   const [drawerOpen, setDrawerOpen] = useState(false)
@@ -38,34 +55,6 @@ export default function Navbar({ theme, toggleTheme }) {
     }
   }, [])
 
-  const LanguageSwitcher = () => (
-    <div className={styles.langSwitcher}>
-      {LANGUAGES.map(({ code, label }) => (
-        <button
-          key={code}
-          className={`${styles.langBtn} ${i18n.language === code ? styles.langBtnActive : ''}`}
-          onClick={() => changeLang(code)}
-        >
-          {label}
-        </button>
-      ))}
-    </div>
-  )
-
-  const ThemeButton = () => (
-    <button className={styles.themeToggle} onClick={toggleTheme} aria-label="Toggle theme">
-      <motion.span
-        key={theme}
-        initial={{ rotate: -180, opacity: 0 }}
-        animate={{ rotate: 0, opacity: 1 }}
-        exit={{ rotate: 180, opacity: 0 }}
-        transition={{ duration: 0.3 }}
-      >
-        {theme === 'dark' ? '☀️' : '🌙'}
-      </motion.span>
-    </button>
-  )
-
   return (
     <>
       <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
@@ -74,32 +63,29 @@ export default function Navbar({ theme, toggleTheme }) {
             <span className={styles.bracket}>&lt;</span>
             PCN
             <span className={styles.slash}> /</span>
-            <span className={styles.bracket}>&gt;</span>
+            <span className={styles.gt}>&gt;</span>
           </a>
 
-          {/* Jezici i tema levo od hamburgera na mobilnom */}
           <div className={styles.mobileActions}>
-            <LanguageSwitcher />
-            <ThemeButton />
+            <LanguageSwitcher currentLang={i18n.language} onChange={changeLang} />
           </div>
 
           <div className={styles.links}>
             {NAV_LINKS.map(({ key, path }) => (
-              <a
-                key={key}
-                href={path}
-                className={styles.link}
-                onClick={(e) => handleNavClick(e, path)}
-              >
-                {t(`nav.${key}`)}
-              </a>
+              <Magnetic key={key} strength={0.2}>
+                <a
+                  href={path}
+                  className={styles.link}
+                  onClick={(e) => handleNavClick(e, path)}
+                >
+                  {t(`nav.${key}`)}
+                </a>
+              </Magnetic>
             ))}
           </div>
 
-          {/* Jezici i tema desno na desktopu */}
           <div className={styles.actions}>
-            <LanguageSwitcher />
-            <ThemeButton />
+            <LanguageSwitcher currentLang={i18n.language} onChange={changeLang} />
           </div>
 
           <button
@@ -141,7 +127,6 @@ export default function Navbar({ theme, toggleTheme }) {
                   {t(`nav.${key}`)}
                 </a>
               ))}
-              {/* Dugmad za jezik i temu više nisu u hamburger meniju na mobilnom */}
             </motion.div>
           </>
         )}

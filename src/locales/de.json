@@ -7,13 +7,15 @@
         "contact": "Kontakt"
     },
     "hero": {
+        "label": "Digitalagentur",
         "title": "Wir bauen digitale Erlebnisse, die verbinden",
-        "subtitle": "PCN ist eine Agentur aus Belgrad, spezialisiert auf Websites, mobile und Webanwendungen, die Ergebnisse liefern.",
+        "subtitle": "PCN ist eine Agentur, spezialisiert auf Websites, mobile und Webanwendungen, die Ergebnisse liefern.",
         "cta_portfolio": "Unsere Arbeit ansehen",
         "cta_contact": "Kontaktieren Sie uns",
-        "scroll_down": "Nach unten scrollen"
+        "scroll_down": "Scrollen"
     },
     "services": {
+        "label": "Was wir tun",
         "title": "Unsere Leistungen",
         "subtitle": "Von der Idee bis zur Umsetzung — wir decken jeden Schritt des digitalen Prozesses ab.",
         "websites": {
@@ -55,6 +57,7 @@
         "markets": "Märkte"
     },
     "portfolio": {
+        "label": "Ausgewählte Arbeiten",
         "title": "Unsere Referenzen",
         "subtitle": "Sehen Sie sich einige Projekte an, auf die wir stolz sind.",
         "filter_all": "Alle",
@@ -63,7 +66,7 @@
         "filter_webapps": "Web-Apps",
         "view_project": "Projekt ansehen",
         "technologies": "Technologien",
-         "projects": [
+        "projects": [
             {
                 "name": "Smashburger",
                 "desc": "Web aplikacija za naručivanje burgera.",
@@ -74,7 +77,7 @@
                 ],
                 "category": "webapps",
                 "url": "https://smashburger.pcn.rs/",
-                "image": "/projects/burger.jpeg"
+                "image": "/projects/smashburger-photo.png"
             },
             {
                 "name": "Realestate",
@@ -86,7 +89,7 @@
                 ],
                 "category": "websites",
                 "url": "https://liveinboka.com/",
-                "image": "/projects/apartment.png"
+                "image": "/projects/realestate-photo.png"
             },
             {
                 "name": "DotConnection",
@@ -97,7 +100,7 @@
                 ],
                 "category": "websites",
                 "url": "https://dotconnection.pcn.rs/",
-                "image": "/projects/dotconnection.png"
+                "image": "/projects/dotconnection-photo.png"
             },
             {
                 "name": "Portfolio",
@@ -109,7 +112,7 @@
                 ],
                 "category": "websites",
                 "url": "https://nikolicmilos.com/",
-                "image": "/projects/portfolio.png"
+                "image": "/projects/portfolio-photo.png"
             },
             {
                 "name": "Parem",
@@ -120,7 +123,7 @@
                 ],
                 "category": "webapps",
                 "url": "https://parem.pcn.rs/",
-                "image": "/projects/parem_logo.png"
+                "image": "/projects/parem-photo.png"
             },
             {
                 "name": "RadiSad",
@@ -130,17 +133,17 @@
                 ],
                 "category": "websites",
                 "url": "https://radisad.rs/",
-                "image": "/projects/radisad_logo.png"
+                "image": "/projects/radisad-photo.png"
             },
             {
                 "name": "Zamah media",
-                "desc": "Gradimo online prisustvo brendova sa smislom.",
+                "desc": "Wir bauen eine sinnvolle Online-Präsenz für Marken auf.",
                 "tech": [
                     "React"
                 ],
                 "category": "webapps",
                 "url": "https://zamah.pcn.rs/",
-                "image": "/projects/logo_zamah.png"
+                "image": "/projects/zamahmedia-photo.png"
             },
             {
                 "name": "Magic Crystals",
@@ -150,7 +153,7 @@
                 ],
                 "category": "websites",
                 "url": "https://magiccrystals.rs/",
-                "image": "/projects/magic_logo.png"
+                "image": "/projects/magiccrystals-photo.png"
             },
             {
                 "name": "Jarac",
@@ -160,7 +163,7 @@
                 ],
                 "category": "websites",
                 "url": "https://jarac.rs/",
-                "image": "/projects/jarac_logo.png"
+                "image": "/projects/jarac-photo.png"
             },
             {
                 "name": "E Commerce",
@@ -170,7 +173,7 @@
                 ],
                 "category": "websites",
                 "url": "https://ecommerce.pcn.rs/",
-                "image": "/projects/ecommerce_logo.png"
+                "image": "/projects/ecommerce-photo.png"
             },
             {
                 "name": "Marko Fizio",
@@ -181,11 +184,12 @@
                 ],
                 "category": "websites",
                 "url": "https://fizio.pcn.rs/",
-                "image": "/projects/fizio_logo.png"
+                "image": "/projects/markofizio-photo.png"
             }
         ]
     },
     "process": {
+        "label": "Wie wir arbeiten",
         "title": "Unser Arbeitsprozess",
         "subtitle": "Ein transparenter und effizienter Ansatz für jedes Projekt.",
         "steps": [
@@ -210,7 +214,10 @@
     "about": {
         "title": "Über uns",
         "subtitle": "Lernen Sie das Team hinter PCN kennen.",
-        "story": "PCN (Pixel | Code | Network) ist eine Webagentur aus Belgrad, gegründet mit der Vision, dass digitale Lösungen zugänglich, funktional und ästhetisch überlegen sein sollten. Mit über 8 Jahren Erfahrung arbeitet unser Expertenteam an Projekten für Kunden aus Serbien, Deutschland und darüber hinaus.",
+        "statement": "PCN ist ein Digitalstudio, das durch Strategie, Design und Technologie sinnvolle Markenerlebnisse schafft.",
+        "statement2": "Wir gestalten für Langlebigkeit — Klarheit zuerst, gebaut für Skalierung.",
+        "tech_title": "Tech Stack",
+        "story": "PCN (Pixel | Code | Network) ist eine Webagentur, gegründet mit der Vision, dass digitale Lösungen zugänglich, funktional und ästhetisch überlegen sein sollten. Mit über 8 Jahren Erfahrung arbeitet unser Expertenteam an Projekten für Kunden aus Serbien, Deutschland und darüber hinaus.",
         "team": [
             {
                 "name": "Miloš Nikolić",
@@ -230,6 +237,7 @@
         ]
     },
     "testimonials": {
+        "label": "Testimonials",
         "title": "Was unsere Kunden sagen",
         "subtitle": "Feedback von denen, die uns ihr Vertrauen geschenkt haben.",
         "items": [
@@ -260,11 +268,13 @@
         ]
     },
     "cta": {
-        "title": "Bereit für Ihr nächstes Projekt?",
+        "title": "Bereit, etwas Bedeutendes aufzubauen?",
+        "title2": "Lassen Sie uns gemeinsam kreieren.",
         "subtitle": "Kontaktieren Sie uns und gemeinsam verwandeln wir Ihre Idee in Realität.",
         "button": "Gespräch starten"
     },
     "contact": {
+        "label": "Kontakt",
         "title": "Kontaktieren Sie uns",
         "subtitle": "Schreiben Sie uns — wir sprechen gerne über Ihr Projekt.",
         "form": {
@@ -291,14 +301,28 @@
             }
         },
         "info": {
+            "address_label": "Adresse",
             "address": "Belgrad, Serbien",
             "email": "info@pcn.rs",
+            "phone_label": "Telefon",
             "phone": "+381 11 123 4567",
+            "hours_label": "Arbeitszeit",
             "hours": "Mo — Fr: 09:00 — 17:00"
         }
     },
+    "marquee": {
+        "items": [
+            "Webentwicklung",
+            "Mobile Anwendungen",
+            "Webanwendungen",
+            "UI/UX Design",
+            "Branding",
+            "Digitalstrategie",
+            "PCN"
+        ]
+    },
     "footer": {
-        "tagline": "Pixel | Code | Network — Ihr digitaler Partner aus Belgrad.",
+        "tagline": "Pixel | Code | Network — Ihr digitaler Partner.",
         "services": "Leistungen",
         "company": "Unternehmen",
         "legal": "Rechtliches",
@@ -314,7 +338,6 @@
             "terms": "Nutzungsbedingungen",
             "cookies": "Cookies"
         },
-        "made_with": "Mit ❤️ in Belgrad gemacht",
         "rights": "Alle Rechte vorbehalten."
     }
 }

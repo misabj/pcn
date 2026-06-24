@@ -9,7 +9,6 @@ const Portfolio = lazy(() => import('../components/sections/Portfolio'))
 const Process = lazy(() => import('../components/sections/Process'))
 const About = lazy(() => import('../components/sections/About'))
 const Testimonials = lazy(() => import('../components/sections/Testimonials'))
-const CtaBanner = lazy(() => import('../components/sections/CtaBanner'))
 const Contact = lazy(() => import('../components/sections/Contact'))
 
 const Loading = () => (
@@ -46,7 +45,6 @@ export default function Home() {
       <Suspense fallback={<Loading />}><Process /></Suspense>
       <Suspense fallback={<Loading />}><About /></Suspense>
       <Suspense fallback={<Loading />}><Testimonials /></Suspense>
-      <Suspense fallback={<Loading />}><CtaBanner /></Suspense>
       <Suspense fallback={<Loading />}><Contact /></Suspense>
     </>
   )
