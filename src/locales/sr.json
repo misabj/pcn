@@ -112,27 +112,25 @@
                 "image": "/projects/portfolio.png"
             },
             {
-                "name": "Troškovi",
-                "desc": "Pametniji tok novca.",
+                "name": "Parem",
+                "desc": "Moderna web aplikacija za digitalne usluge.",
                 "tech": [
                     "React",
                     "Node.js"
                 ],
-                "category": "mobile",
-                "url": "https://troskovi.pcn.rs/login",
-                "image": "/projects/troskovi.png"
+                "category": "webapps",
+                "url": "https://parem.pcn.rs/",
+                "image": "/projects/parem_logo.png"
             },
             {
-                "name": "Rekordi",
-                "desc": "Sistem za praćenje sportskih rezultata i rekorda.",
+                "name": "RadiSad",
+                "desc": "Pronađite najbliža korisna mesta u Vašoj okolini.",
                 "tech": [
-                    "React",
-                    "Node.js",
-                    "MongoDB"
+                    "React"
                 ],
-                "category": "webapps",
-                "url": "https://rekordi.pcn.rs/login",
-                "image": "/projects/rekordi.png"
+                "category": "websites",
+                "url": "https://radisad.rs/",
+                "image": "/projects/radisad_logo.png"
             },
             {
                 "name": "Zamah media",
@@ -153,6 +151,47 @@
                 "category": "webapps",
                 "url": "https://mondo33.com/",
                 "image": "/projects/mondo33.png"
+            },
+            {
+                "name": "Magic Crystals",
+                "desc": "Sajt za srpski brend 100% prirodne kozmetike sa eliksirom od kristala.",
+                "tech": [
+                    "React"
+                ],
+                "category": "websites",
+                "url": "https://magiccrystals.rs/",
+                "image": "/projects/magic_logo.png"
+            },
+            {
+                "name": "Jarac",
+                "desc": "Sajt Jarac sa informacijama o igračima i timu.",
+                "tech": [
+                    "Next.js"
+                ],
+                "category": "websites",
+                "url": "https://jarac.rs/",
+                "image": "/projects/jarac_logo.png"
+            },
+            {
+                "name": "E Commerce",
+                "desc": "E-commerce platforma za online prodaju.",
+                "tech": [
+                    "React"
+                ],
+                "category": "websites",
+                "url": "https://ecommerce.pcn.rs/",
+                "image": "/projects/ecommerce_logo.png"
+            },
+            {
+                "name": "Marko Fizio",
+                "desc": "Sajt za fizioterapeuta i masera Marka Igrutinovića.",
+                "tech": [
+                    "HTML",
+                    "CSS"
+                ],
+                "category": "websites",
+                "url": "https://fizio.pcn.rs/",
+                "image": "/projects/fizio_logo.png"
             }
         ]
     },
