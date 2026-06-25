@@ -6,8 +6,8 @@
 // 4. Iz Account > API Keys kopiraj Public Key
 
 export const EMAILJS_CONFIG = {
-  SERVICE_ID: 'YOUR_SERVICE_ID',
-  TEMPLATE_ID: 'YOUR_TEMPLATE_ID',
-  PUBLIC_KEY: 'YOUR_PUBLIC_KEY',
+  SERVICE_ID: 'service_s0e7z3z',
+  TEMPLATE_ID: 'template_g51nh5j',
+  PUBLIC_KEY: 'rnTWujVi3gFCLxw3I',
   TO_EMAIL: 'info@pcn.rs'
 }
