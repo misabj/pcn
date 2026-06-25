@@ -1,7 +1,7 @@
 {
     "name": "PCN — Pixel | Code | Network",
     "short_name": "PCN",
-    "description": "PCN web agencija iz Beograda. Izgradnja sajtova, mobilnih i web aplikacija.",
+    "description": "PCN web agencija . Izgradnja sajtova, mobilnih i web aplikacija.",
     "start_url": "./",
     "display": "standalone",
     "background_color": "#0a0a12",

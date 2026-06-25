@@ -29,9 +29,9 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>PCN — Pixel | Code | Network | Web Agencija Beograd</title>
+        <title>PCN — Pixel | Code | Network | Web Agencija</title>
         <meta name="description" content={t('hero.subtitle')} />
-        <meta property="og:title" content="PCN — Web Agencija Beograd" />
+        <meta property="og:title" content="PCN — Web Agencija" />
         <meta property="og:description" content={t('hero.subtitle')} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://pcn.rs" />

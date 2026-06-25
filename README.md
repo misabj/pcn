@@ -1,6 +1,6 @@
 # PCN - Pixel | Code | Network
 
-Web agencija iz Beograda. Kompletan, produkcijski spreman React.js sajt.
+Web agencija . Kompletan, produkcijski spreman React.js sajt.
 
 ## Pokretanje
 
