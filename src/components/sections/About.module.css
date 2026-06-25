@@ -33,8 +33,8 @@
 
 .member {
     background: var(--bg-primary);
-    padding: 3rem 2rem;
-    text-align: left;
+    padding: 4rem 2.5rem;
+    text-align: center;
     transition: all var(--transition-base);
 }
 
@@ -43,16 +43,28 @@
 }
 
 .avatar {
-    width: 80px;
-    height: 80px;
+    width: 260px;
+    height: 260px;
     border-radius: 50%;
     background: var(--bg-tertiary);
     border: 1px solid var(--border);
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2rem;
+    overflow: hidden;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 15%;
+    image-rendering: -webkit-optimize-contrast;
+    filter: contrast(1.03) saturate(1.02);
 }
 
 .memberName {
@@ -75,6 +87,7 @@
     font-size: 0.85rem;
     line-height: 1.6;
     font-weight: 300;
+    text-align: left;
 }
 
 .techSection {

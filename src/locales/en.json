@@ -7,45 +7,46 @@
         "contact": "Contact"
     },
     "hero": {
-        "label": "Digital Agency",
-        "title": "We build digital experiences that connect",
-        "subtitle": "PCN is a agency specializing in websites, mobile and web applications that deliver results.",
+        "label": "Custom websites & applications",
+        "title": "A website that looks credible, loads fast, and brings in more inquiries.",
+        "subtitle": "PCN designs and develops modern websites, online stores, and web applications for companies that want clearer digital presence, more business opportunities, and a reliable solution that can grow with them.",
         "cta_portfolio": "View our work",
-        "cta_contact": "Contact us",
-        "scroll_down": "Scroll"
+        "cta_contact": "Request a quote",
+        "scroll_down": "Explore"
     },
     "services": {
-        "label": "What we do",
-        "title": "Our services",
-        "subtitle": "From idea to realization — we cover every step of the digital process.",
+        "label": "Services",
+        "title": "Digital solutions for real business needs",
+        "subtitle": "From the first conversation to launch, we build solutions that clearly present your business and make it easier for customers to find, contact, or buy from you.",
         "websites": {
             "title": "Website Development",
-            "desc": "Fast, SEO-optimized custom websites",
+            "desc": "Websites that clearly present your business and turn visitors into real inquiries.",
             "bullets": [
-                "Responsive design for all devices",
-                "Optimized loading speed",
-                "SEO-friendly content",
-                "CMS integration"
+                "Modern design tailored to your brand",
+                "Great experience on phone, tablet, and desktop",
+                "Fast loading and clear content structure",
+                "Contact forms, maps, social media, and needed integrations",
+                "Easy content management when you want to update text and images yourself"
             ]
         },
         "mobile": {
             "title": "Mobile Applications",
-            "desc": "iOS & Android native and cross-platform",
+            "desc": "Applications that give users quick and easy access to your service, wherever they are.",
             "bullets": [
-                "React Native & Flutter",
-                "Platform-adapted UI/UX design",
-                "Push notifications and analytics",
-                "App Store and Google Play publishing"
+                "Android and iOS apps from a stable shared codebase",
+                "Clear user experience without unnecessary steps",
+                "User accounts, notifications, payments, and integrations",
+                "Support through publication on Google Play and the App Store"
             ]
         },
         "webapps": {
             "title": "Web Applications",
-            "desc": "SaaS and enterprise solutions",
+            "desc": "Internal systems and digital products that simplify work, save time, and give better control over processes.",
             "bullets": [
-                "Custom architecture",
-                "Scalable cloud solutions",
-                "API integrations",
-                "Admin panels and dashboards"
+                "Admin panels, CRM systems, and business dashboards",
+                "Automation of processes currently done manually",
+                "Integrations with existing systems and services",
+                "Solutions adapted to the way your team actually works"
             ]
         },
         "learn_more": "Learn more"
@@ -57,9 +58,9 @@
         "markets": "Markets"
     },
     "portfolio": {
-        "label": "Selected work",
-        "title": "Our portfolio",
-        "subtitle": "Take a look at some of the projects we're proud of.",
+        "label": "Selected projects",
+        "title": "Solutions built for real business needs",
+        "subtitle": "See how we've helped different brands and teams present themselves better, simplify processes, and become more accessible to their customers.",
         "filter_all": "All",
         "filter_websites": "Websites",
         "filter_mobile": "Mobile apps",
@@ -69,7 +70,7 @@
         "projects": [
             {
                 "name": "Smashburger",
-                "desc": "Web aplikacija za naručivanje burgera.",
+                "desc": "An online ordering platform that makes it easy for customers to choose products and simplifies order management for the team.",
                 "tech": [
                     "React",
                     "Node.js",
@@ -81,7 +82,7 @@
             },
             {
                 "name": "Realestate",
-                "desc": "Prezentacioni sajt za nekretnine u Crnoj Gori.",
+                "desc": "A real estate presentation website that puts the offer front and center and makes it easy for potential buyers to send an inquiry.",
                 "tech": [
                     "React",
                     "Vite",
@@ -93,7 +94,7 @@
             },
             {
                 "name": "DotConnection",
-                "desc": "Spajamo poslodavce iz regiona sa radnicima iz celog sveta",
+                "desc": "A digital platform that clearly connects employers from the region with candidates from abroad.",
                 "tech": [
                     "React",
                     "Vite"
@@ -104,7 +105,7 @@
             },
             {
                 "name": "Portfolio",
-                "desc": "Lični portfolio sajt i blog.",
+                "desc": "A personal website and blog that professionally showcases the owner's projects and expertise.",
                 "tech": [
                     "React",
                     "Vite",
@@ -116,7 +117,7 @@
             },
             {
                 "name": "Parem",
-                "desc": "Modern web application for digital services.",
+                "desc": "A web application for digital services with clear content structure and simple navigation.",
                 "tech": [
                     "React",
                     "Node.js"
@@ -127,27 +128,37 @@
             },
             {
                 "name": "RadiSad",
-                "desc": "Find useful places near you.",
+                "desc": "A digital product that helps users find useful places in their area.",
                 "tech": [
                     "React"
                 ],
-                "category": "mobile",
+                "category": "webapps",
                 "url": "https://radisad.rs/",
                 "image": "/projects/radisad-photo.webp"
             },
             {
                 "name": "Zamah media",
-                "desc": "Gradimo online prisustvo brendova sa smislom.",
+                "desc": "A digital marketing agency website that clearly presents services and makes it easy for potential clients to get in touch.",
                 "tech": [
                     "React"
                 ],
-                "category": "webapps",
+                "category": "websites",
                 "url": "https://zamah.pcn.rs/",
                 "image": "/projects/zamahmedia-photo.webp"
             },
             {
+                "name": "Mondo 33",
+                "desc": "A premium online presentation of aesthetic treatments and technologies, designed to build trust before the first contact.",
+                "tech": [
+                    "React"
+                ],
+                "category": "websites",
+                "url": "https://mondo33.com/",
+                "image": "/projects/mondo33-photo.webp"
+            },
+            {
                 "name": "Magic Crystals",
-                "desc": "Website for the Serbian brand of 100% natural cosmetics with crystal elixir.",
+                "desc": "An online presentation of a natural cosmetics brand with a clear display of products and values.",
                 "tech": [
                     "React"
                 ],
@@ -157,17 +168,17 @@
             },
             {
                 "name": "Jarac",
-                "desc": "Website the Jarac with player and team information.",
+                "desc": "A basketball club website with information about the team, players, and results.",
                 "tech": [
                     "Next.js"
                 ],
-                "category": "mobile",
+                "category": "websites",
                 "url": "https://jarac.rs/",
                 "image": "/projects/jarac-photo.webp"
             },
             {
                 "name": "E Commerce",
-                "desc": "E-commerce platform for online sales.",
+                "desc": "An online store with clear categories, product variants, and a simple shopping experience.",
                 "tech": [
                     "React"
                 ],
@@ -177,7 +188,7 @@
             },
             {
                 "name": "Marko Fizio",
-                "desc": "Website for physiotherapist and massage therapist Marko Igrutinović.",
+                "desc": "A professional online presentation of physiotherapy and massage services with a clear call to book an appointment.",
                 "tech": [
                     "HTML",
                     "CSS"
@@ -190,49 +201,49 @@
     },
     "process": {
         "label": "How we work",
-        "title": "Our workflow",
-        "subtitle": "A transparent and efficient approach to every project.",
+        "title": "A clear process, no guessing or unpleasant surprises.",
+        "subtitle": "Throughout the entire project, you know what we're working on, what's next, and how the idea turns into a finished digital product.",
         "steps": [
             {
-                "title": "Analysis",
-                "desc": "We understand your needs, goals, and target audience."
+                "title": "We get to know your business",
+                "desc": "At the start, we define goals, audience, content, and the features your project actually needs."
             },
             {
-                "title": "Design",
-                "desc": "We create wireframes and UI design that impresses."
+                "title": "We set structure and design",
+                "desc": "Before development, we align on a clear direction for content, look, and user experience."
             },
             {
-                "title": "Development",
-                "desc": "We code following the highest industry standards."
+                "title": "We develop and test",
+                "desc": "We build fast, stable, and responsive solutions, with regular communication during development."
             },
             {
-                "title": "Launch",
-                "desc": "Deploy to production and continuous support."
+                "title": "We launch and stay available",
+                "desc": "We put the project online, connect the needed services, and provide support after launch."
             }
         ]
     },
     "about": {
-        "title": "About us",
-        "subtitle": "Meet the team behind PCN.",
-        "statement": "PCN is a digital studio crafting meaningful brand experiences through strategy, design, and technology.",
-        "statement2": "We design for longevity — clarity first, built to scale.",
+        "title": "A digital partner for companies that want to grow.",
+        "subtitle": "A team that combines strategy, design, and development into solutions with a clear business purpose.",
+        "statement": "PCN is a team from Belgrade that helps companies turn ideas into quality digital products — from presentation websites and online stores to complex web and mobile applications.",
+        "statement2": "We don't build websites just to exist. We build them to clearly present your business, build trust, and make it easier for customers to contact you, book a service, or buy a product.",
         "tech_title": "Tech Stack",
-        "story": "PCN (Pixel | Code | Network) is web agency founded with the vision that digital solutions should be accessible, functional, and aesthetically superior. With over 8 years of experience, our team of experts works on projects for clients from Serbia, Germany, and beyond.",
+        "story": "For every project, we combine strategy, design, and development so you get a solution that looks credible, works reliably, and can grow with your business. We work with clients from Serbia, Germany, and other markets, with direct communication and a focus on quality delivery.",
         "team": [
             {
                 "name": "Miloš Nikolić",
                 "role": "CEO & Fullstack Developer",
-                "bio": "10+ years of experience in web development. Leads strategic partnerships and technical architecture."
+                "bio": "10+ years of experience in developing digital products. Leads projects, architecture, and client communication."
             },
             {
                 "name": "Milan Čučković",
                 "role": "Lead Designer",
-                "bio": "Specialized in UI/UX design with a focus on user experience."
+                "bio": "Designs clear user experiences and visual systems tailored to the brand."
             },
             {
                 "name": "Milan Pantović",
                 "role": "Mobile Developer",
-                "bio": "Expert in React Native and Flutter. Develops performant mobile applications."
+                "bio": "Develops mobile applications for iOS and Android, from idea to store publication."
             }
         ]
     },
@@ -240,43 +251,18 @@
         "label": "Testimonials",
         "title": "What our clients say",
         "subtitle": "Feedback from those who trusted us.",
-        "items": [
-            {
-                "name": "Stefan Marković",
-                "company": "TechStart d.o.o.",
-                "text": "The PCN team exceeded all our expectations. The website is fast, modern, and attracts clients.",
-                "rating": 5
-            },
-            {
-                "name": "Jelena Nikolić",
-                "company": "Clinic Plus",
-                "text": "Professional approach from start to finish. I recommend them to everyone looking for quality.",
-                "rating": 5
-            },
-            {
-                "name": "Milan Stojanović",
-                "company": "FitTrack",
-                "text": "The app is intuitive and users love it. Great job!",
-                "rating": 5
-            },
-            {
-                "name": "Ivana Popović",
-                "company": "Legal Solutions",
-                "text": "The CRM system they built has significantly improved our business.",
-                "rating": 4
-            }
-        ]
+        "items": []
     },
     "cta": {
-        "title": "Ready to build something meaningful?",
-        "title2": "Let's create together.",
-        "subtitle": "Get in touch and together we'll turn your idea into reality.",
-        "button": "Start a conversation"
+        "title": "Have an idea for a website or app? Let's turn it into a concrete plan.",
+        "title2": "",
+        "subtitle": "Send us a few details about your project, and we'll get back to you with proposed next steps and a rough estimate.",
+        "button": "Send inquiry"
     },
     "contact": {
         "label": "Contact",
-        "title": "Contact us",
-        "subtitle": "Reach out — we'd love to talk about your project.",
+        "title": "Tell us what you need.",
+        "subtitle": "You don't need a detailed brief. Just tell us briefly about your idea, and we'll define everything else together.",
         "form": {
             "name": "Full name",
             "email": "Email address",
@@ -288,16 +274,16 @@
                 "webapp": "Web application",
                 "other": "Other"
             },
-            "message": "Your message",
-            "submit": "Send message",
+            "message": "Message about the project",
+            "submit": "Send inquiry",
             "sending": "Sending...",
-            "success": "Message sent successfully!",
-            "error": "An error occurred. Please try again.",
+            "success": "Thank you for your message. We'll get back to you soon.",
+            "error": "Message not sent. Please try again or email us directly.",
             "validation": {
-                "name_required": "Name is required",
-                "email_required": "Email is required",
+                "name_required": "Please enter your full name",
+                "email_required": "Please enter your email address",
                 "email_invalid": "Please enter a valid email address",
-                "message_required": "Message is required"
+                "message_required": "Please write a message about the project"
             }
         },
         "info": {
@@ -307,22 +293,21 @@
             "phone_label": "Phone",
             "phone": "+381 64 0757 295",
             "hours_label": "Working hours",
-            "hours": "Mon — Fri: 09:00 — 17:00"
+            "hours": "Mon — Fri: 08:00 — 16:00"
         }
     },
     "marquee": {
         "items": [
-            "Website Development",
-            "Mobile Applications",
-            "Web Applications",
-            "UI/UX Design",
-            "Branding",
-            "Digital Strategy",
+            "Online stores",
+            "SEO basics",
+            "Admin panels",
+            "API integrations",
+            "Maintenance & support",
             "PCN"
         ]
     },
     "footer": {
-        "tagline": "Pixel | Code | Network — Your digital partner.",
+        "tagline": "PCN — digital partner for websites, applications, and online products.",
         "services": "Services",
         "company": "Company",
         "legal": "Legal",

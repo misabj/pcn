@@ -7,45 +7,46 @@
         "contact": "Kontakt"
     },
     "hero": {
-        "label": "Digitalna agencija",
-        "title": "Gradimo digitalna iskustva koja povezuju",
-        "subtitle": "PCN je agencija specijalizovana za izradu sajtova, mobilnih i web aplikacija koje donose rezultate.",
-        "cta_portfolio": "Pogledajte naš rad",
-        "cta_contact": "Kontaktirajte nas",
-        "scroll_down": "Skrol"
+        "label": "Web sajtovi i aplikacije po meri",
+        "title": "Sajt koji izgleda ozbiljno, radi brzo i dovodi više upita.",
+        "subtitle": "PCN projektuje i razvija moderne sajtove, online prodavnice i web aplikacije za kompanije koje žele jasnije digitalno prisustvo, više prilika za posao i pouzdano rešenje koje može da raste zajedno sa njima.",
+        "cta_portfolio": "Pogledajte reference",
+        "cta_contact": "Zatražite ponudu",
+        "scroll_down": "Istražite"
     },
     "services": {
-        "label": "Šta radimo",
-        "title": "Naše usluge",
-        "subtitle": "Od ideje do realizacije — pokrivamo svaki korak digitalnog procesa.",
+        "label": "Usluge",
+        "title": "Digitalna rešenja za konkretne poslovne potrebe",
+        "subtitle": "Od prvog razgovora do lansiranja, pravimo rešenja koja jasno predstavljaju vaš posao i olakšavaju klijentima da vas pronađu, kontaktiraju ili kupe.",
         "websites": {
             "title": "Izrada sajtova",
-            "desc": "Brzi, SEO-optimizovani sajtovi po meri",
+            "desc": "Sajtovi koji jasno predstavljaju vaš posao i pretvaraju posetioce u konkretne upite.",
             "bullets": [
-                "Responzivan dizajn za sve uređaje",
-                "Optimizovana brzina učitavanja",
-                "SEO prilagođen sadržaj",
-                "CMS integracija"
+                "Moderan dizajn prilagođen vašem brendu",
+                "Odlično iskustvo na telefonu, tabletu i računaru",
+                "Brzo učitavanje i pregledna struktura sadržaja",
+                "Forme za upite, mapa, društvene mreže i potrebne integracije",
+                "Jednostavna administracija sadržaja kada želite samostalno da menjate tekstove i slike"
             ]
         },
         "mobile": {
             "title": "Mobilne aplikacije",
-            "desc": "iOS & Android native i cross-platform",
+            "desc": "Aplikacije koje korisnicima omogućavaju brz i jednostavan pristup vašoj usluzi, gde god da se nalaze.",
             "bullets": [
-                "React Native & Flutter",
-                "UI/UX dizajn prilagođen platformi",
-                "Push notifikacije i analitika",
-                "Objava na App Store i Google Play"
+                "Android i iOS aplikacije iz stabilne zajedničke baze koda",
+                "Jasno korisničko iskustvo bez nepotrebnih koraka",
+                "Nalozi korisnika, notifikacije, plaćanja i integracije",
+                "Podrška do objave na Google Play i App Store"
             ]
         },
         "webapps": {
             "title": "Web aplikacije",
-            "desc": "SaaS i enterprise rešenja",
+            "desc": "Interni sistemi i digitalni proizvodi koji pojednostavljuju posao, štede vreme i daju bolju kontrolu nad procesima.",
             "bullets": [
-                "Prilagođena arhitektura",
-                "Skalabilna cloud rešenja",
-                "API integracije",
-                "Admin paneli i dashboardovi"
+                "Admin paneli, CRM sistemi i poslovni dashboardovi",
+                "Automatizacija procesa koji se danas rade ručno",
+                "Integracije sa postojećim sistemima i servisima",
+                "Rešenja prilagođena načinu na koji vaš tim stvarno radi"
             ]
         },
         "learn_more": "Saznajte više"
@@ -57,9 +58,9 @@
         "markets": "Tržišta"
     },
     "portfolio": {
-        "label": "Izabrani radovi",
-        "title": "Naše reference",
-        "subtitle": "Pogledajte neke od projekata na koje smo ponosni.",
+        "label": "Izabrani projekti",
+        "title": "Rešenja napravljena za stvarne poslovne potrebe",
+        "subtitle": "Pogledajte kako smo različitim brendovima i timovima pomogli da se bolje predstave, pojednostave procese i budu dostupniji svojim klijentima.",
         "filter_all": "Sve",
         "filter_websites": "Sajtovi",
         "filter_mobile": "Mobilne app",
@@ -69,7 +70,7 @@
         "projects": [
             {
                 "name": "Smashburger",
-                "desc": "Web aplikacija za naručivanje burgera.",
+                "desc": "Platforma za online poručivanje koja korisnicima olakšava izbor proizvoda, a timu pojednostavljuje prijem porudžbina.",
                 "tech": [
                     "React",
                     "Node.js",
@@ -81,7 +82,7 @@
             },
             {
                 "name": "Realestate",
-                "desc": "Prezentacioni sajt za nekretnine u Crnoj Gori.",
+                "desc": "Prezentacioni sajt za nekretnine koji stavlja ponudu u prvi plan i olakšava potencijalnim kupcima da pošalju upit.",
                 "tech": [
                     "React",
                     "Vite",
@@ -93,7 +94,7 @@
             },
             {
                 "name": "DotConnection",
-                "desc": "Spajamo poslodavce iz regiona sa radnicima iz celog sveta",
+                "desc": "Digitalna platforma koja jasno povezuje poslodavce iz regiona sa kandidatima iz inostranstva.",
                 "tech": [
                     "React",
                     "Vite"
@@ -104,7 +105,7 @@
             },
             {
                 "name": "Portfolio",
-                "desc": "Lični portfolio sajt i blog.",
+                "desc": "Lični sajt i blog koji profesionalno predstavlja projekte i stručnost vlasnika.",
                 "tech": [
                     "React",
                     "Vite",
@@ -116,7 +117,7 @@
             },
             {
                 "name": "Parem",
-                "desc": "Moderna web aplikacija za digitalne usluge.",
+                "desc": "Web aplikacija za digitalne usluge sa jasnom strukturom sadržaja i jednostavnom navigacijom.",
                 "tech": [
                     "React",
                     "Node.js"
@@ -127,37 +128,37 @@
             },
             {
                 "name": "RadiSad",
-                "desc": "Pronađite najbliža korisna mesta u Vašoj okolini.",
+                "desc": "Digitalni proizvod koji pomaže korisnicima da pronađu korisna mesta u svojoj okolini.",
                 "tech": [
                     "React"
                 ],
-                "category": "mobile",
+                "category": "webapps",
                 "url": "https://radisad.rs/",
                 "image": "/projects/radisad-photo.webp"
             },
             {
                 "name": "Zamah media",
-                "desc": "Gradimo online prisustvo brendova sa smislom.",
+                "desc": "Sajt agencije za digitalni marketing koji jasno predstavlja usluge i olakšava kontakt potencijalnih klijenata.",
                 "tech": [
                     "React"
                 ],
-                "category": "webapps",
+                "category": "websites",
                 "url": "https://zamah.pcn.rs/",
                 "image": "/projects/zamahmedia-photo.webp"
             },
             {
                 "name": "Mondo 33",
-                "desc": "Najnoviji laserski aparati za estetske tretmane.",
+                "desc": "Premium online prezentacija estetskih tretmana i tehnologija, osmišljena da gradi poverenje pre prvog kontakta.",
                 "tech": [
                     "React"
                 ],
-                "category": "webapps",
+                "category": "websites",
                 "url": "https://mondo33.com/",
                 "image": "/projects/mondo33-photo.webp"
             },
             {
                 "name": "Magic Crystals",
-                "desc": "Sajt za srpski brend 100% prirodne kozmetike sa eliksirom od kristala.",
+                "desc": "Online prezentacija brenda prirodne kozmetike sa jasnim prikazom proizvoda i vrednosti.",
                 "tech": [
                     "React"
                 ],
@@ -167,17 +168,17 @@
             },
             {
                 "name": "Jarac",
-                "desc": "Sajt Jarac sa informacijama o igračima i timu.",
+                "desc": "Sajt košarkaškog kluba sa informacijama o timu, igračima i rezultatima.",
                 "tech": [
                     "Next.js"
                 ],
-                "category": "mobile",
+                "category": "websites",
                 "url": "https://jarac.rs/",
                 "image": "/projects/jarac-photo.webp"
             },
             {
                 "name": "E Commerce",
-                "desc": "E-commerce platforma za online prodaju.",
+                "desc": "Online prodavnica sa preglednim kategorijama, varijantama proizvoda i jednostavnim iskustvom kupovine.",
                 "tech": [
                     "React"
                 ],
@@ -187,7 +188,7 @@
             },
             {
                 "name": "Marko Fizio",
-                "desc": "Sajt za fizioterapeuta i masera Marka Igrutinovića.",
+                "desc": "Profesionalna online prezentacija usluga fizioterapije i masaže, sa jasnim pozivom za zakazivanje.",
                 "tech": [
                     "HTML",
                     "CSS"
@@ -199,50 +200,50 @@
         ]
     },
     "process": {
-        "label": "Način rada",
-        "title": "Naš proces rada",
-        "subtitle": "Transparentan i efikasan pristup svakom projektu.",
+        "label": "Kako radimo",
+        "title": "Jasan proces, bez nagađanja i neprijatnih iznenađenja.",
+        "subtitle": "Tokom celog projekta znate šta radimo, šta je sledeći korak i kako se ideja pretvara u gotov digitalni proizvod.",
         "steps": [
             {
-                "title": "Analiza",
-                "desc": "Razumevamo vaše potrebe, ciljeve i ciljnu publiku."
+                "title": "Upoznajemo vaš posao",
+                "desc": "Na početku definišemo ciljeve, publiku, sadržaj i funkcionalnosti koje su vašem projektu zaista potrebne."
             },
             {
-                "title": "Dizajn",
-                "desc": "Kreiramo wireframe i UI dizajn koji oduševljava."
+                "title": "Postavljamo strukturu i dizajn",
+                "desc": "Pre razvoja usaglašavamo jasan pravac za sadržaj, izgled i korisničko iskustvo."
             },
             {
-                "title": "Razvoj",
-                "desc": "Kodiramo po najvišim standardima industrije."
+                "title": "Razvijamo i testiramo",
+                "desc": "Gradimo brzo, stabilno i prilagođeno svim uređajima, uz redovnu komunikaciju tokom izrade."
             },
             {
-                "title": "Lansiranje",
-                "desc": "Deploy na produkciju i kontinuirana podrška."
+                "title": "Lansiramo i ostajemo dostupni",
+                "desc": "Postavljamo projekat online, povezujemo potrebne servise i pružamo podršku nakon objave."
             }
         ]
     },
     "about": {
-        "title": "O nama",
-        "subtitle": "Upoznajte tim koji stoji iza PCN-a.",
-        "statement": "PCN je digitalni studio koji stvara smislene brend doživljaje kroz strategiju, dizajn i tehnologiju.",
-        "statement2": "Dizajniramo dugoročno — jasnoća na prvom mestu, građeno za rast.",
+        "title": "Digitalni partner za firme koje žele da rastu.",
+        "subtitle": "Tim koji spaja strategiju, dizajn i razvoj u rešenja koja imaju jasnu poslovnu svrhu.",
+        "statement": "PCN je tim iz Beograda koji pomaže kompanijama da ideju pretvore u kvalitetan digitalni proizvod — od prezentacionog sajta i online prodavnice do složenih web i mobilnih aplikacija.",
+        "statement2": "Ne radimo sajtove samo da bi postojali. Radimo ih da jasno predstave vaš posao, izgrade poverenje i olakšaju klijentima da vas kontaktiraju, zakažu uslugu ili kupe proizvod.",
         "tech_title": "Tehnologije",
-        "story": "PCN (Pixel | Code | Network) je web agencija osnovana sa vizijom da digitalna rešenja budu dostupna, funkcionalna i estetski superiorna. Sa više od 8 godina iskustva, naš tim stručnjaka radi na projektima za klijente iz Srbije, Nemačke, i šire.",
+        "story": "Kod svakog projekta spajamo strategiju, dizajn i razvoj, tako da dobijete rešenje koje izgleda ozbiljno, radi pouzdano i može da raste zajedno sa vašim poslovanjem. Radimo sa klijentima iz Srbije, Nemačke i drugih tržišta, uz direktnu komunikaciju i fokus na kvalitetnu isporuku.",
         "team": [
             {
                 "name": "Miloš Nikolić",
                 "role": "CEO & Fullstack Developer",
-                "bio": "10+ godina iskustva u web razvoju. Vodi strateška partnerstva i tehničku arhitekturu."
+                "bio": "10+ godina iskustva u razvoju digitalnih proizvoda. Vodi projekte, arhitekturu i komunikaciju sa klijentima."
             },
             {
                 "name": "Milan Čučković",
                 "role": "Lead Designer",
-                "bio": "Specijalizovan za UI/UX dizajn sa fokusom na korisničko iskustvo."
+                "bio": "Dizajnira jasna korisnička iskustva i vizuelne sisteme prilagođene brendu."
             },
             {
                 "name": "Milan Pantović",
                 "role": "Mobile Developer",
-                "bio": "Expert za React Native i Flutter. Razvija performantne mobilne aplikacije."
+                "bio": "Razvija mobilne aplikacije za iOS i Android, od ideje do objave na storovima."
             }
         ]
     },
@@ -250,43 +251,18 @@
         "label": "Preporuke",
         "title": "Šta kažu naši klijenti",
         "subtitle": "Povratne informacije od onih koji su nam ukazali poverenje.",
-        "items": [
-            {
-                "name": "Stefan Marković",
-                "company": "TechStart d.o.o.",
-                "text": "PCN tim je prevazišao sva naša očekivanja. Sajt je brz, moderan i privlači klijente.",
-                "rating": 5
-            },
-            {
-                "name": "Jelena Nikolić",
-                "company": "Klinika Plus",
-                "text": "Profesionalan pristup od početka do kraja. Preporučujem svima koji traže kvalitet.",
-                "rating": 5
-            },
-            {
-                "name": "Milan Stojanović",
-                "company": "FitTrack",
-                "text": "Aplikacija je intuitivna i korisnici je obožavaju. Sjajan posao!",
-                "rating": 5
-            },
-            {
-                "name": "Ivana Popović",
-                "company": "Legal Solutions",
-                "text": "CRM sistem koji su napravili značajno je unapredio naše poslovanje.",
-                "rating": 4
-            }
-        ]
+        "items": []
     },
     "cta": {
-        "title": "Spremni da izgradite nešto smisleno?",
-        "title2": "Hajde da kreiramo zajedno.",
-        "subtitle": "Javite nam se i zajedno ćemo pretvoriti vašu ideju u realnost.",
-        "button": "Započnite razgovor"
+        "title": "Imate ideju za sajt ili aplikaciju? Pretvorimo je u konkretan plan.",
+        "title2": "",
+        "subtitle": "Pošaljite nam nekoliko informacija o projektu, a mi ćemo vam se javiti sa predlogom narednih koraka i okvirnom procenom.",
+        "button": "Pošaljite upit"
     },
     "contact": {
         "label": "Kontakt",
-        "title": "Kontaktirajte nas",
-        "subtitle": "Javite nam se — rado ćemo razgovarati o vašem projektu.",
+        "title": "Recite nam šta vam je potrebno.",
+        "subtitle": "Nije potreban detaljan brief. Dovoljno je da nam ukratko opišete ideju, a zajedno ćemo definisati sve ostalo.",
         "form": {
             "name": "Ime i prezime",
             "email": "Email adresa",
@@ -298,16 +274,16 @@
                 "webapp": "Web aplikacija",
                 "other": "Ostalo"
             },
-            "message": "Vaša poruka",
-            "submit": "Pošaljite poruku",
+            "message": "Poruka o projektu",
+            "submit": "Pošaljite upit",
             "sending": "Slanje...",
-            "success": "Poruka je uspešno poslata!",
-            "error": "Došlo je do greške. Pokušajte ponovo.",
+            "success": "Hvala vam na poruci. Javićemo vam se uskoro.",
+            "error": "Poruka nije poslata. Pokušajte ponovo ili nam pišite direktno na email.",
             "validation": {
-                "name_required": "Ime je obavezno",
-                "email_required": "Email je obavezan",
+                "name_required": "Unesite ime i prezime",
+                "email_required": "Unesite email adresu",
                 "email_invalid": "Unesite validnu email adresu",
-                "message_required": "Poruka je obavezna"
+                "message_required": "Napišite poruku o projektu"
             }
         },
         "info": {
@@ -322,17 +298,16 @@
     },
     "marquee": {
         "items": [
-            "Izrada sajtova",
-            "Mobilne aplikacije",
-            "Web aplikacije",
-            "UI/UX dizajn",
-            "Brending",
-            "Digitalna strategija",
+            "Online prodavnice",
+            "SEO osnove",
+            "Admin paneli",
+            "API integracije",
+            "Održavanje i podrška",
             "PCN"
         ]
     },
     "footer": {
-        "tagline": "Pixel | Code | Network — Vaš digitalni partner.",
+        "tagline": "PCN — digitalni partner za sajtove, aplikacije i online proizvode.",
         "services": "Usluge",
         "company": "Kompanija",
         "legal": "Pravno",

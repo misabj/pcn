@@ -4,11 +4,9 @@ import { useTranslation } from 'react-i18next'
 import Hero from '../components/sections/Hero'
 
 const Services = lazy(() => import('../components/sections/Services'))
-const Stats = lazy(() => import('../components/sections/Stats'))
 const Portfolio = lazy(() => import('../components/sections/Portfolio'))
 const Process = lazy(() => import('../components/sections/Process'))
 const About = lazy(() => import('../components/sections/About'))
-const Testimonials = lazy(() => import('../components/sections/Testimonials'))
 const Contact = lazy(() => import('../components/sections/Contact'))
 
 const Loading = () => (
@@ -40,11 +38,9 @@ export default function Home() {
 
       <Hero />
       <Suspense fallback={<Loading />}><Services /></Suspense>
-      <Suspense fallback={<Loading />}><Stats /></Suspense>
       <Suspense fallback={<Loading />}><Portfolio /></Suspense>
       <Suspense fallback={<Loading />}><Process /></Suspense>
       <Suspense fallback={<Loading />}><About /></Suspense>
-      <Suspense fallback={<Loading />}><Testimonials /></Suspense>
       <Suspense fallback={<Loading />}><Contact /></Suspense>
     </>
   )

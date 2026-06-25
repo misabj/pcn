@@ -6,7 +6,12 @@ import { TECH_STACK } from '../../utils/constants'
 import TextReveal from '../common/TextReveal'
 import styles from './About.module.css'
 
-const AVATARS = ['👨‍💻', '👩‍🎨', '📱']
+function getAvatar(name) {
+  if (name.includes('Miloš') || name.includes('Милош')) return '/projects/milos.webp'
+  if (name.includes('Čučković') || name.includes('Чучковић')) return '/projects/milanc.webp'
+  if (name.includes('Pantović') || name.includes('Пантовић')) return '/projects/milanp.webp'
+  return ''
+}
 
 export default function About() {
   const { t } = useTranslation()
@@ -56,7 +61,7 @@ export default function About() {
               whileHover={{ rotate: [0, -10, 10, 0], scale: 1.1 }}
               transition={{ duration: 0.5 }}
             >
-              {AVATARS[i]}
+              <img src={getAvatar(member.name)} alt={member.name} width="80" height="80" loading="lazy" decoding="async" />
             </motion.div>
             <h3 className={styles.memberName}>{member.name}</h3>
             <p className={styles.memberRole}>{member.role}</p>

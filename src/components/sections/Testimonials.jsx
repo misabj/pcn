@@ -7,7 +7,7 @@ import styles from './Testimonials.module.css'
 
 export default function Testimonials() {
   const { t } = useTranslation()
-  const items = t('testimonials.items', { returnObjects: true })
+  const items = t('testimonials.items', { returnObjects: true }) || []
   const [current, setCurrent] = useState(0)
   const [paused, setPaused] = useState(false)
   const { ref, isVisible } = useScrollAnimation()
@@ -17,10 +17,12 @@ export default function Testimonials() {
   }, [items.length])
 
   useEffect(() => {
-    if (paused) return
+    if (paused || !items.length) return
     const timer = setInterval(next, 6000)
     return () => clearInterval(timer)
-  }, [paused, next])
+  }, [paused, next, items.length])
+
+  if (!items.length) return null
 
   const item = items[current]
 

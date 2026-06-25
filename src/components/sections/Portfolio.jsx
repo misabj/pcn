@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback, memo } from 'react'
+import { useState, useEffect, useMemo, useCallback, memo } from 'react'
 import { useTranslation } from 'react-i18next'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
@@ -17,42 +17,52 @@ const ICONS = { websites: '🌐', mobile: '📱', webapps: '⚙️' }
 const YEAR = new Date().getFullYear()
 
 const cardVariants = {
-  hidden: { opacity: 0, y: 60 },
+  hidden: { opacity: 0, y: 40 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] }
+    transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] }
   }
 }
 
-const ProjectCard = memo(function ProjectCard({ project, index, onClick }) {
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const check = () => {
+      setIsMobile(window.matchMedia('(pointer: coarse)').matches || window.innerWidth < 768)
+    }
+    check()
+    window.addEventListener('resize', check)
+    return () => window.removeEventListener('resize', check)
+  }, [])
+
+  return isMobile
+}
+
+const ProjectCard = memo(function ProjectCard({ project, index, onClick, isMobile }) {
   const { t } = useTranslation()
   const bgStyle = getProjectBackground(project, index)
 
-  return (
-    <motion.div
-      layout
-      variants={cardVariants}
-      exit={{ opacity: 0, y: 60 }}
-      transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-      className={styles.card}
-      onClick={onClick}
-    >
+  const image = project.image && (
+    <img
+      className={styles.projectImg}
+      src={project.image}
+      alt={project.name}
+      width="900"
+      height="675"
+      loading="lazy"
+      decoding="async"
+    />
+  )
+
+  const cardContent = (
+    <>
       <div
         className={`${styles.image} ${project.image ? styles.hasImage : ''}`}
         style={project.image ? undefined : bgStyle}
       >
-        {project.image && (
-          <img
-            className={styles.projectImg}
-            src={project.image}
-            alt={project.name}
-            width="900"
-            height="675"
-            loading={index < 4 ? 'eager' : 'lazy'}
-            decoding="async"
-          />
-        )}
+        {image}
         <span className={styles.blob} />
         {!project.image && (
           <span className={styles.imagePlaceholder}>{ICONS[project.category]}</span>
@@ -74,6 +84,25 @@ const ProjectCard = memo(function ProjectCard({ project, index, onClick }) {
           ))}
         </div>
       </div>
+    </>
+  )
+
+  if (isMobile) {
+    return (
+      <div className={styles.card} onClick={onClick}>
+        {cardContent}
+      </div>
+    )
+  }
+
+  return (
+    <motion.div
+      variants={cardVariants}
+      transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+      className={styles.card}
+      onClick={onClick}
+    >
+      {cardContent}
     </motion.div>
   )
 })
@@ -83,6 +112,7 @@ export default function Portfolio() {
   const [filter, setFilter] = useState('all')
   const [selectedProject, setSelectedProject] = useState(null)
   const { ref, isVisible } = useScrollAnimation()
+  const isMobile = useIsMobile()
 
   const projects = t('portfolio.projects', { returnObjects: true })
 
@@ -121,27 +151,42 @@ export default function Portfolio() {
           ))}
         </div>
 
-        <motion.div
-          ref={ref}
-          className={styles.grid}
-          initial="hidden"
-          animate={isVisible ? 'visible' : 'hidden'}
-          variants={{
-            hidden: {},
-            visible: { transition: { staggerChildren: 0.1 } }
-          }}
-        >
-          <AnimatePresence mode="popLayout">
+        {isMobile ? (
+          <div ref={ref} className={styles.grid}>
             {filtered.map((project, i) => (
               <ProjectCard
                 key={project.name}
                 project={project}
                 index={i}
                 onClick={() => handleProjectClick(project)}
+                isMobile={true}
               />
             ))}
-          </AnimatePresence>
-        </motion.div>
+          </div>
+        ) : (
+          <motion.div
+            ref={ref}
+            className={styles.grid}
+            initial="hidden"
+            animate={isVisible ? 'visible' : 'hidden'}
+            variants={{
+              hidden: {},
+              visible: { transition: { staggerChildren: 0.08 } }
+            }}
+          >
+            <AnimatePresence mode="wait">
+              {filtered.map((project, i) => (
+                <ProjectCard
+                  key={project.name}
+                  project={project}
+                  index={i}
+                  onClick={() => handleProjectClick(project)}
+                  isMobile={false}
+                />
+              ))}
+            </AnimatePresence>
+          </motion.div>
+        )}
       </div>
 
       <Modal

@@ -68,6 +68,7 @@
     position: relative;
     border: 1px solid var(--border);
     border-radius: 8px;
+    will-change: transform, opacity;
 }
 
 .card::before {
@@ -245,8 +246,7 @@
     .image::before,
     .image::after,
     .image .blob {
-        filter: blur(50px);
-        opacity: 0.35;
+        display: none;
     }
 }
 
