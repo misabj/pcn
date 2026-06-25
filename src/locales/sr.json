@@ -128,11 +128,11 @@
             },
             {
                 "name": "RadiSad",
-                "desc": "Digitalni proizvod koji pomaže korisnicima da pronađu korisna mesta u svojoj okolini.",
+                "desc": "Aplikacija koja pomaže korisnicima da pronađu korisna mesta u svojoj okolini.",
                 "tech": [
                     "React"
                 ],
-                "category": "webapps",
+                "category": "mobile",
                 "url": "https://radisad.rs/",
                 "image": "/projects/radisad-photo.webp"
             },
@@ -168,11 +168,11 @@
             },
             {
                 "name": "Jarac",
-                "desc": "Sajt košarkaškog kluba sa informacijama o timu, igračima i rezultatima.",
+                "desc": "Mobilna aplikacija košarkaškog kluba sa informacijama o timu, igračima i rezultatima.",
                 "tech": [
                     "Next.js"
                 ],
-                "category": "websites",
+                "category": "mobile",
                 "url": "https://jarac.rs/",
                 "image": "/projects/jarac-photo.webp"
             },

@@ -128,11 +128,11 @@
             },
             {
                 "name": "RadiSad",
-                "desc": "Digitales Produkt, das Nutzern hilft, nützliche Orte in ihrer Umgebung zu finden.",
+                "desc": "Eine App, die Nutzern hilft, nützliche Orte in ihrer Umgebung zu finden.",
                 "tech": [
                     "React"
                 ],
-                "category": "webapps",
+                "category": "mobile",
                 "url": "https://radisad.rs/",
                 "image": "/projects/radisad-photo.webp"
             },
@@ -168,11 +168,11 @@
             },
             {
                 "name": "Jarac",
-                "desc": "Website eines Basketballclubs mit Informationen über Team, Spieler und Ergebnisse.",
+                "desc": "Mobile App eines Basketballclubs mit Informationen über Team, Spieler und Ergebnisse.",
                 "tech": [
                     "Next.js"
                 ],
-                "category": "websites",
+                "category": "mobile",
                 "url": "https://jarac.rs/",
                 "image": "/projects/jarac-photo.webp"
             },
