@@ -182,24 +182,27 @@ export default function Contact() {
               </Magnetic>
             </div>
           </div>
+        </motion.div>
 
-          <div className={styles.map}>
-            <iframe
-              title="Kneza Miloša, Beograd mapa"
-              width="100%"
-              height="320"
-              style={{
-                border: 0,
-                borderRadius: 12,
-                filter: 'invert(90%) hue-rotate(180deg)',
-                transition: 'filter 0.3s'
-              }}
-              loading="lazy"
-              allowFullScreen
-              referrerPolicy="no-referrer-when-downgrade"
-              src="https://maps.google.com/maps?hl=en&q=Kneza%20Milo%C5%A1a%2C%20Beograd&ie=UTF8&t=m&z=15&iwloc=B&output=embed"
-            ></iframe>
-          </div>
+        <motion.div
+          className={styles.mapFull}
+          initial={{ opacity: 0, y: 40 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.5 }}
+        >
+          <iframe
+            title="Kneza Miloša, Beograd mapa"
+            width="100%"
+            height="100%"
+            style={{
+              border: 0,
+              filter: 'invert(90%) hue-rotate(180deg)'
+            }}
+            loading="lazy"
+            allowFullScreen
+            referrerPolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?hl=en&q=Kneza%20Milo%C5%A1a%2C%20Beograd&ie=UTF8&t=m&z=15&iwloc=B&output=embed"
+          ></iframe>
         </motion.div>
       </motion.div>
     </section>

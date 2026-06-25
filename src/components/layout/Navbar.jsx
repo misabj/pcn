@@ -66,10 +66,6 @@ export default function Navbar() {
             <span className={styles.gt}>&gt;</span>
           </a>
 
-          <div className={styles.mobileActions}>
-            <LanguageSwitcher currentLang={i18n.language} onChange={changeLang} />
-          </div>
-
           <div className={styles.links}>
             {NAV_LINKS.map(({ key, path }) => (
               <Magnetic key={key} strength={0.2}>
@@ -92,6 +88,7 @@ export default function Navbar() {
             className={`${styles.hamburger} ${drawerOpen ? styles.hamburgerOpen : ''}`}
             onClick={() => setDrawerOpen(!drawerOpen)}
             aria-label="Menu"
+            aria-expanded={drawerOpen}
           >
             <span />
             <span />
@@ -112,9 +109,9 @@ export default function Navbar() {
             />
             <motion.div
               className={styles.drawer}
-              initial={{ x: 280 }}
+              initial={{ x: '100%' }}
               animate={{ x: 0 }}
-              exit={{ x: 280 }}
+              exit={{ x: '100%' }}
               transition={{ type: 'tween', duration: 0.3 }}
             >
               {NAV_LINKS.map(({ key, path }) => (
@@ -127,6 +124,9 @@ export default function Navbar() {
                   {t(`nav.${key}`)}
                 </a>
               ))}
+              <div className={styles.drawerLang}>
+                <LanguageSwitcher currentLang={i18n.language} onChange={changeLang} />
+              </div>
             </motion.div>
           </>
         )}

@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, Fragment } from 'react'
 import { useTranslation } from 'react-i18next'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import Button from '../common/Button'
@@ -21,10 +21,10 @@ export default function Hero() {
 
   return (
     <section ref={containerRef} className={styles.hero}>
-      <motion.div className={styles.videoBg} style={{ y, opacity }}>
-        <video src="/hero-video.mp4" autoPlay muted loop playsInline aria-hidden="true" />
+      <motion.div className={styles.photoBg} style={{ y, opacity }}>
+        <img src="/hero-gold-bg.webp" alt="" aria-hidden="true" />
       </motion.div>
-      <motion.div className={styles.videoOverlay} style={{ opacity }} />
+      <motion.div className={styles.heroSheen} style={{ opacity }} />
       <motion.div className={styles.bgPattern} style={{ y, opacity }} />
 
       <motion.div
@@ -43,20 +43,23 @@ export default function Hero() {
 
           <h1>
             {titleWords.map((word, i) => (
-              <span key={i} className={styles.wordWrapper}>
-                <motion.span
-                  className={styles.word}
-                  initial={{ y: '100%', rotateX: -90 }}
-                  animate={{ y: 0, rotateX: 0 }}
-                  transition={{
-                    duration: 1,
-                    delay: 0.4 + i * 0.08,
-                    ease: [0.22, 1, 0.36, 1]
-                  }}
-                >
-                  {word}
-                </motion.span>
-              </span>
+              <Fragment key={i}>
+                <span className={styles.wordWrapper}>
+                  <motion.span
+                    className={styles.word}
+                    initial={{ y: '100%', rotateX: -90 }}
+                    animate={{ y: 0, rotateX: 0 }}
+                    transition={{
+                      duration: 1,
+                      delay: 0.4 + i * 0.08,
+                      ease: [0.22, 1, 0.36, 1]
+                    }}
+                  >
+                    {word}
+                  </motion.span>
+                </span>
+                {i < titleWords.length - 1 && ' '}
+              </Fragment>
             ))}
           </h1>
 
@@ -91,7 +94,6 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 1.5 }}
       >
-        <span>{t('hero.scroll_down')}</span>
         <div className={styles.scrollLine}>
           <span />
         </div>

@@ -26,6 +26,8 @@
     gap: 1px;
     background: var(--border);
     border: 1px solid var(--border);
+    width: min(100% - 4rem, 1400px);
+    margin: 0 auto;
     margin-bottom: 6rem;
 }
 
@@ -128,6 +130,7 @@
 
     .teamGrid {
         grid-template-columns: 1fr;
+        width: min(100% - 2.5rem, 1400px);
     }
 
     .member {

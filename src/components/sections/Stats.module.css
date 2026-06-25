@@ -8,6 +8,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0;
+    width: min(100% - 4rem, 1400px);
+    margin: 0 auto;
 }
 
 .stat {
@@ -39,13 +41,19 @@
 }
 
 @media (max-width: 768px) {
+    .section {
+        padding: 5rem 0;
+    }
+
     .grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem 0;
+        width: min(100% - 2.5rem, 1400px);
     }
 
     .stat {
         border-right: none;
         padding: 1rem;
+        text-align: center;
     }
 }

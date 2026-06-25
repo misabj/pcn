@@ -49,19 +49,14 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-@media (pointer: fine) {
-    * {
-        cursor: none !important;
-    }
-}
-
 body::before {
     content: '';
     position: fixed;
     inset: 0;
     background:
-        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.02) 0%, transparent 35%),
-        radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.015) 0%, transparent 35%);
+        radial-gradient(circle at 82% 18%, rgba(246, 213, 139, 0.08) 0%, transparent 34%),
+        radial-gradient(circle at 16% 78%, rgba(139, 95, 29, 0.1) 0%, transparent 38%),
+        linear-gradient(180deg, rgba(255, 230, 170, 0.018), transparent 42%);
     pointer-events: none;
     z-index: -1;
 }
@@ -74,13 +69,15 @@ h5,
 h6 {
     font-family: var(--font-heading);
     font-weight: 400;
-    line-height: 1.08;
+    line-height: 1.12;
     letter-spacing: -0.03em;
     color: var(--text-primary);
+    overflow-wrap: break-word;
 }
 
 h1 {
     font-size: clamp(3rem, 10vw, 8rem);
+    line-height: 1.2;
 }
 
 h2 {
@@ -144,7 +141,7 @@ ol {
 
 @media (min-width: 1600px) {
     .container {
-        max-width: 1600px;
+        max-width: 1400px;
     }
 }
 
@@ -173,6 +170,10 @@ ol {
     text-align: left;
     letter-spacing: -0.03em;
     color: var(--text-primary);
+    background: linear-gradient(100deg, #ffffff 0%, #fff4c9 56%, #d7a84f 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     line-height: 1.12;
 }
 
@@ -203,7 +204,7 @@ ol {
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    color: var(--text-muted);
+    color: var(--gold-soft);
     margin-bottom: 1.5rem;
 }
 
@@ -215,7 +216,7 @@ ol {
 }
 
 ::selection {
-    background: var(--text-primary);
+    background: var(--gold-soft);
     color: var(--bg-primary);
 }
 

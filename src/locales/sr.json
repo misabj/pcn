@@ -77,7 +77,7 @@
                 ],
                 "category": "webapps",
                 "url": "https://smashburger.pcn.rs/",
-                "image": "/projects/smashburger-photo.png"
+                "image": "/projects/smashburger-photo.webp"
             },
             {
                 "name": "Realestate",
@@ -89,7 +89,7 @@
                 ],
                 "category": "websites",
                 "url": "https://liveinboka.com/",
-                "image": "/projects/realestate-photo.png"
+                "image": "/projects/realestate-photo.webp"
             },
             {
                 "name": "DotConnection",
@@ -100,7 +100,7 @@
                 ],
                 "category": "websites",
                 "url": "https://dotconnection.pcn.rs/",
-                "image": "/projects/dotconnection-photo.png"
+                "image": "/projects/dotconnection-photo.webp"
             },
             {
                 "name": "Portfolio",
@@ -112,7 +112,7 @@
                 ],
                 "category": "websites",
                 "url": "https://nikolicmilos.com/",
-                "image": "/projects/portfolio-photo.png"
+                "image": "/projects/portfolio-photo.webp"
             },
             {
                 "name": "Parem",
@@ -123,7 +123,7 @@
                 ],
                 "category": "webapps",
                 "url": "https://parem.pcn.rs/",
-                "image": "/projects/parem-photo.png"
+                "image": "/projects/parem-photo.webp"
             },
             {
                 "name": "RadiSad",
@@ -131,9 +131,9 @@
                 "tech": [
                     "React"
                 ],
-                "category": "websites",
+                "category": "mobile",
                 "url": "https://radisad.rs/",
-                "image": "/projects/radisad-photo.png"
+                "image": "/projects/radisad-photo.webp"
             },
             {
                 "name": "Zamah media",
@@ -143,7 +143,7 @@
                 ],
                 "category": "webapps",
                 "url": "https://zamah.pcn.rs/",
-                "image": "/projects/zamahmedia-photo.png"
+                "image": "/projects/zamahmedia-photo.webp"
             },
             {
                 "name": "Mondo 33",
@@ -153,7 +153,7 @@
                 ],
                 "category": "webapps",
                 "url": "https://mondo33.com/",
-                "image": "/projects/mondo33-photo.png"
+                "image": "/projects/mondo33-photo.webp"
             },
             {
                 "name": "Magic Crystals",
@@ -163,7 +163,7 @@
                 ],
                 "category": "websites",
                 "url": "https://magiccrystals.rs/",
-                "image": "/projects/magiccrystals-photo.png"
+                "image": "/projects/magiccrystals-photo.webp"
             },
             {
                 "name": "Jarac",
@@ -171,9 +171,9 @@
                 "tech": [
                     "Next.js"
                 ],
-                "category": "websites",
+                "category": "mobile",
                 "url": "https://jarac.rs/",
-                "image": "/projects/jarac-photo.png"
+                "image": "/projects/jarac-photo.webp"
             },
             {
                 "name": "E Commerce",
@@ -183,7 +183,7 @@
                 ],
                 "category": "websites",
                 "url": "https://ecommerce.pcn.rs/",
-                "image": "/projects/ecommerce-photo.png"
+                "image": "/projects/ecommerce-photo.webp"
             },
             {
                 "name": "Marko Fizio",
@@ -194,7 +194,7 @@
                 ],
                 "category": "websites",
                 "url": "https://fizio.pcn.rs/",
-                "image": "/projects/markofizio-photo.png"
+                "image": "/projects/markofizio-photo.webp"
             }
         ]
     },

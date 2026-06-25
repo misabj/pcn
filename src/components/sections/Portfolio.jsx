@@ -16,6 +16,10 @@ const FILTER_MAP = { filter_all: 'all', filter_websites: 'websites', filter_mobi
 const ICONS = { websites: '🌐', mobile: '📱', webapps: '⚙️' }
 const YEAR = new Date().getFullYear()
 
+function getFallbackImage(src) {
+  return src?.replace('-photo.webp', '.jpg')
+}
+
 const cardVariants = {
   hidden: { opacity: 0, y: 60 },
   visible: {
@@ -28,6 +32,7 @@ const cardVariants = {
 const ProjectCard = memo(function ProjectCard({ project, index, onClick }) {
   const { t } = useTranslation()
   const bgStyle = getProjectBackground(project, index)
+  const fallbackImage = getFallbackImage(project.image)
 
   return (
     <motion.div
@@ -38,7 +43,30 @@ const ProjectCard = memo(function ProjectCard({ project, index, onClick }) {
       className={styles.card}
       onClick={onClick}
     >
-      <div className={styles.image} style={bgStyle}>
+      <div
+        className={`${styles.image} ${project.image ? styles.hasImage : ''}`}
+        style={project.image ? undefined : bgStyle}
+      >
+        {project.image && (
+          <picture className={styles.projectPicture}>
+            <source srcSet={project.image} type="image/webp" />
+            <img
+              className={styles.projectImg}
+              src={fallbackImage || project.image}
+              alt={project.name}
+              width="900"
+              height="675"
+              loading={index < 4 ? 'eager' : 'lazy'}
+              decoding="async"
+              onError={(event) => {
+                if (fallbackImage && !event.currentTarget.dataset.fallbackApplied) {
+                  event.currentTarget.dataset.fallbackApplied = 'true'
+                  event.currentTarget.src = fallbackImage
+                }
+              }}
+            />
+          </picture>
+        )}
         <span className={styles.blob} />
         {!project.image && (
           <span className={styles.imagePlaceholder}>{ICONS[project.category]}</span>
@@ -137,20 +165,32 @@ export default function Portfolio() {
       >
         {selectedProject && (
           <>
-            <div
-              className={styles.modalImage}
-              style={selectedProject.image ? {
-                backgroundImage: `url(${selectedProject.image})`,
-                backgroundSize: 'contain',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-                backgroundColor: 'var(--bg-primary)',
-              } : { background: getProjectBackground(selectedProject, 0).background }}
-            >
-              {!selectedProject.image && (
+            {selectedProject.image ? (
+              <picture className={styles.modalImage}>
+                <source srcSet={selectedProject.image} type="image/webp" />
+                <img
+                  src={getFallbackImage(selectedProject.image) || selectedProject.image}
+                  alt={selectedProject.name}
+                  width="900"
+                  height="675"
+                  decoding="async"
+                  onError={(event) => {
+                    const fallbackImage = getFallbackImage(selectedProject.image)
+                    if (fallbackImage && !event.currentTarget.dataset.fallbackApplied) {
+                      event.currentTarget.dataset.fallbackApplied = 'true'
+                      event.currentTarget.src = fallbackImage
+                    }
+                  }}
+                />
+              </picture>
+            ) : (
+              <div
+                className={styles.modalImage}
+                style={{ background: getProjectBackground(selectedProject, 0).background }}
+              >
                 <span className={styles.imagePlaceholder}>{ICONS[selectedProject.category]}</span>
-              )}
-            </div>
+              </div>
+            )}
             <p className={styles.modalDesc}>{selectedProject.desc}</p>
             <p className={styles.modalTechLabel}>{t('portfolio.technologies')}:</p>
             <div className={styles.modalTags}>

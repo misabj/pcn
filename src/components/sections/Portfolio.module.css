@@ -1,6 +1,8 @@
 .section {
     padding: 10rem 0;
-    background: var(--bg-secondary);
+    background:
+        radial-gradient(circle at 82% 8%, rgba(215, 168, 79, 0.1), transparent 34%),
+        var(--bg-secondary);
 }
 
 .header {
@@ -44,20 +46,18 @@
 }
 
 .filterBtn:hover {
-    color: var(--text-secondary);
+    color: var(--gold-soft);
 }
 
 .filterActive {
-    color: var(--text-primary);
-    border-bottom-color: var(--text-primary);
+    color: var(--gold-soft);
+    border-bottom-color: var(--gold-soft);
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1px;
-    background: var(--border);
-    border: 1px solid var(--border);
+    gap: 1rem;
 }
 
 .card {
@@ -66,6 +66,8 @@
     transition: all var(--transition-base);
     cursor: pointer;
     position: relative;
+    border: 1px solid var(--border);
+    border-radius: 8px;
 }
 
 .card::before {
@@ -82,9 +84,13 @@
     opacity: 1;
 }
 
+.card:hover {
+    box-shadow: var(--shadow-glow);
+}
+
 .image {
     width: 100%;
-    height: 360px;
+    aspect-ratio: 4 / 3;
     background: var(--bg-primary);
     display: flex;
     align-items: center;
@@ -95,6 +101,31 @@
     background-position: center;
     background-repeat: no-repeat;
     padding: 0;
+}
+
+.projectPicture {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.projectImg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hasImage::before,
+.hasImage::after,
+.hasImage .blob {
+    display: none;
 }
 
 .image::before,
@@ -158,7 +189,59 @@
     z-index: 2;
 }
 
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 768px) {
+    .section {
+        padding: 5rem 0;
+    }
+
+    .header {
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    .intro {
+        max-width: 100%;
+        margin-top: 1rem;
+        justify-self: start;
+    }
+
+    .filters {
+        gap: 0.6rem;
+        margin: 0 -1.25rem 1.5rem;
+        overflow-x: auto;
+        padding: 0 1.25rem 0.5rem;
+        border-bottom: none;
+        scrollbar-width: none;
+        scroll-snap-type: x proximity;
+    }
+
+    .filters::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filterBtn {
+        white-space: nowrap;
+        min-height: 44px;
+        padding: 0.8rem 1rem;
+        border: 1px solid var(--border);
+        border-radius: 100px;
+        margin-bottom: 0;
+        background: rgba(246, 213, 139, 0.03);
+        scroll-snap-align: start;
+    }
+
+    .filterActive {
+        background: var(--gradient-cta);
+        color: #100b04;
+        border-color: rgba(255, 244, 201, 0.58);
+    }
+
     .image::before,
     .image::after,
     .image .blob {
@@ -174,8 +257,8 @@
 .viewProject {
     padding: 0.8rem 1.5rem;
     border-radius: 100px;
-    background: var(--text-primary);
-    color: var(--bg-primary);
+    background: var(--gradient-cta);
+    color: #100b04;
     font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -205,7 +288,7 @@
     font-size: 0.65rem;
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    color: var(--text-muted);
+    color: var(--gold);
 }
 
 .year {
@@ -249,6 +332,12 @@
     border: 1px solid var(--border);
 }
 
+.modalImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 .modalDesc {
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
@@ -274,9 +363,9 @@
 .livePreviewBtn {
     display: inline-block;
     padding: 1rem 2.5rem;
-    background: var(--text-primary);
-    color: var(--bg-primary);
-    border: 1px solid var(--text-primary);
+    background: var(--gradient-cta);
+    color: #100b04;
+    border: 1px solid rgba(255, 244, 201, 0.58);
     border-radius: 100px;
     font-size: 0.75rem;
     font-weight: 400;
@@ -291,28 +380,58 @@
 
 .livePreviewBtn:hover {
     background: transparent;
-    color: var(--text-primary);
+    color: var(--gold-soft);
 }
 
 @media (max-width: 768px) {
     .grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .image {
-        height: 280px;
+        aspect-ratio: 16 / 11;
     }
 
-    .header {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+    .body {
+        padding: 1.1rem;
     }
 
-    .intro {
-        justify-self: start;
+    .meta {
+        margin-bottom: 0.7rem;
     }
 
-    .filters {
-        overflow-x: auto;
+    .desc {
+        font-size: 0.82rem;
+        line-height: 1.55;
+    }
+
+    .tags {
+        margin-top: 1rem;
+        gap: 0.4rem;
+    }
+
+    .modalImage {
+        height: auto;
+        aspect-ratio: 16 / 11;
+    }
+
+    .name {
+        font-size: 1.15rem;
+    }
+}
+
+@media (hover: none) {
+    .card:hover {
+        box-shadow: none;
+    }
+
+    .card:hover::before,
+    .card:hover .overlay {
+        opacity: 0;
+    }
+
+    .card:active {
+        transform: scale(0.99);
     }
 }

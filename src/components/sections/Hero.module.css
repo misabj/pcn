@@ -1,15 +1,15 @@
 .hero {
-    min-height: 100vh;
+    min-height: 100svh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    background: var(--bg-primary);
+    background: var(--gradient-hero);
     padding-top: 80px;
 }
 
-.videoBg {
+.photoBg {
     position: absolute;
     inset: 0;
     z-index: 0;
@@ -17,36 +17,36 @@
     pointer-events: none;
 }
 
-.videoBg video {
+.photoBg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: grayscale(1) contrast(1.15) brightness(0.55);
-    opacity: 0.36;
+    filter: contrast(1.08) saturate(0.95) brightness(0.64);
+    opacity: 0.88;
     transform: scale(1.04);
 }
 
-.videoOverlay {
+.heroSheen {
     position: absolute;
     inset: 0;
     z-index: 1;
     pointer-events: none;
     background:
-        radial-gradient(circle at 32% 42%, rgba(255, 255, 255, 0.08), transparent 28%),
-        linear-gradient(90deg, rgba(5, 5, 5, 0.6) 0%, rgba(5, 5, 5, 0.3) 46%, rgba(5, 5, 5, 0.76) 100%),
-        linear-gradient(180deg, rgba(5, 5, 5, 0.88) 0%, rgba(5, 5, 5, 0.34) 48%, rgba(5, 5, 5, 0.92) 100%);
+        radial-gradient(circle at 35% 43%, rgba(246, 213, 139, 0.2), transparent 28%),
+        linear-gradient(90deg, rgba(5, 4, 3, 0.72) 0%, rgba(5, 4, 3, 0.26) 48%, rgba(5, 4, 3, 0.78) 100%),
+        linear-gradient(180deg, rgba(5, 4, 3, 0.9) 0%, rgba(5, 4, 3, 0.28) 45%, rgba(5, 4, 3, 0.9) 100%);
 }
 
 .bgPattern {
     position: absolute;
     inset: -20%;
     background-image:
-        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+        linear-gradient(rgba(246, 213, 139, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(246, 213, 139, 0.04) 1px, transparent 1px);
     background-size: 80px 80px;
     pointer-events: none;
     z-index: 1;
-    opacity: 0.8;
+    opacity: 0.72;
     mask-image: radial-gradient(circle at center, black 0%, transparent 70%);
     -webkit-mask-image: radial-gradient(circle at center, black 0%, transparent 70%);
 }
@@ -69,48 +69,52 @@
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    color: var(--text-muted);
+    color: var(--gold-soft);
     margin-bottom: 2rem;
+    text-shadow: 0 0 28px rgba(246, 213, 139, 0.24);
 }
 
 .content h1 {
-    font-size: clamp(3rem, 9vw, 8.5rem);
+    font-size: clamp(2.75rem, 8vw, 7.5rem);
     font-weight: 400;
-    line-height: 1.06;
+    line-height: 1.2;
     letter-spacing: -0.04em;
     margin-bottom: 2.5rem;
     color: var(--text-primary);
+    text-shadow: 0 0 52px rgba(0, 0, 0, 0.72);
+    overflow-wrap: break-word;
 }
 
 .wordWrapper {
     display: inline-block;
     overflow: hidden;
-    vertical-align: baseline;
+    vertical-align: bottom;
     perspective: 1000px;
-    margin-right: 0.22em;
-    padding-bottom: 0.12em;
-    margin-bottom: -0.12em;
-}
-
-.wordWrapper:last-child {
-    margin-right: 0;
+    padding-bottom: 0.7em;
+    margin-bottom: -0.7em;
 }
 
 .word {
     display: inline-block;
     transform-origin: bottom center;
-    line-height: inherit;
+    line-height: 1.3;
+    background: linear-gradient(100deg, #ffffff 0%, #fff9e7 46%, #e8bc64 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .subtitle {
     font-family: var(--font-heading);
     font-size: clamp(1.1rem, 2vw, 1.4rem);
-    color: var(--text-secondary);
+    color: rgba(255, 238, 204, 0.86);
     margin-bottom: 3rem;
     line-height: 1.7;
     max-width: 640px;
     font-weight: 400;
     letter-spacing: -0.01em;
+    text-shadow: 0 0 28px rgba(0, 0, 0, 0.95), 0 0 24px rgba(215, 168, 79, 0.16);
 }
 
 .ctas {
@@ -121,19 +125,14 @@
 
 .scroll {
     position: absolute;
-    bottom: 3rem;
+    bottom: 3.25rem;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    color: var(--text-muted);
-    font-size: 0.65rem;
+    justify-content: center;
     z-index: 2;
-    font-weight: 400;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
 }
 
 .scrollLine {
@@ -141,43 +140,102 @@
     height: 60px;
     position: relative;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.16);
+    background: rgba(246, 213, 139, 0.18);
 }
 
 .scrollLine span {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 36%;
-    background: var(--text-primary);
-    animation: scrollTrace 2.2s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+    height: 100%;
+    background: var(--gradient-cta);
+    box-shadow: 0 0 16px rgba(246, 213, 139, 0.55);
+    transform-origin: bottom;
+    animation: verticalLoad 1.65s ease-in-out infinite;
+}
+
+@keyframes verticalLoad {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+
+    35% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    70% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
 }
 
 @media (max-width: 768px) {
     .hero {
-        padding-top: 100px;
-        min-height: 90vh;
+        padding-top: 86px;
+        min-height: 100svh;
+        align-items: flex-start;
+    }
+
+    .photoBg img {
+        object-position: 58% center;
+        transform: scale(1.08);
     }
 
     .container {
         padding: 0 1.25rem;
+        padding-top: 7vh;
     }
 
     .content h1 {
-        font-size: clamp(2.5rem, 12vw, 4rem);
+        max-width: 100%;
+        font-size: clamp(2.15rem, 10vw, 3rem);
+        line-height: 1.12;
+        margin-bottom: 1.35rem;
     }
 
     .subtitle {
         font-size: 1rem;
+        max-width: 92%;
+        margin-bottom: 2rem;
     }
 
     .ctas {
+        width: 100%;
+        max-width: 340px;
         flex-direction: column;
         align-items: flex-start;
+        gap: 0.85rem;
+    }
+
+    .ctas > * {
+        width: 100%;
     }
 
     .scroll {
         display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .content h1 {
+        font-size: clamp(2rem, 9.8vw, 2.75rem);
+    }
+}
+
+@media (max-width: 360px) {
+    .content h1 {
+        font-size: clamp(1.85rem, 9.5vw, 2.25rem);
+    }
+
+    .subtitle {
+        font-size: 0.95rem;
     }
 }
