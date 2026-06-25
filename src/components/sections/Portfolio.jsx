@@ -16,10 +16,6 @@ const FILTER_MAP = { filter_all: 'all', filter_websites: 'websites', filter_mobi
 const ICONS = { websites: '🌐', mobile: '📱', webapps: '⚙️' }
 const YEAR = new Date().getFullYear()
 
-function getFallbackImage(src) {
-  return src?.replace('-photo.webp', '.jpg')
-}
-
 const cardVariants = {
   hidden: { opacity: 0, y: 60 },
   visible: {
@@ -32,7 +28,6 @@ const cardVariants = {
 const ProjectCard = memo(function ProjectCard({ project, index, onClick }) {
   const { t } = useTranslation()
   const bgStyle = getProjectBackground(project, index)
-  const fallbackImage = getFallbackImage(project.image)
 
   return (
     <motion.div
@@ -48,24 +43,15 @@ const ProjectCard = memo(function ProjectCard({ project, index, onClick }) {
         style={project.image ? undefined : bgStyle}
       >
         {project.image && (
-          <picture className={styles.projectPicture}>
-            <source srcSet={project.image} type="image/webp" />
-            <img
-              className={styles.projectImg}
-              src={fallbackImage || project.image}
-              alt={project.name}
-              width="900"
-              height="675"
-              loading={index < 4 ? 'eager' : 'lazy'}
-              decoding="async"
-              onError={(event) => {
-                if (fallbackImage && !event.currentTarget.dataset.fallbackApplied) {
-                  event.currentTarget.dataset.fallbackApplied = 'true'
-                  event.currentTarget.src = fallbackImage
-                }
-              }}
-            />
-          </picture>
+          <img
+            className={styles.projectImg}
+            src={project.image}
+            alt={project.name}
+            width="900"
+            height="675"
+            loading={index < 4 ? 'eager' : 'lazy'}
+            decoding="async"
+          />
         )}
         <span className={styles.blob} />
         {!project.image && (
@@ -166,23 +152,16 @@ export default function Portfolio() {
         {selectedProject && (
           <>
             {selectedProject.image ? (
-              <picture className={styles.modalImage}>
-                <source srcSet={selectedProject.image} type="image/webp" />
-                <img
-                  src={getFallbackImage(selectedProject.image) || selectedProject.image}
-                  alt={selectedProject.name}
-                  width="900"
-                  height="675"
-                  decoding="async"
-                  onError={(event) => {
-                    const fallbackImage = getFallbackImage(selectedProject.image)
-                    if (fallbackImage && !event.currentTarget.dataset.fallbackApplied) {
-                      event.currentTarget.dataset.fallbackApplied = 'true'
-                      event.currentTarget.src = fallbackImage
-                    }
-                  }}
-                />
-              </picture>
+              <div
+                className={styles.modalImage}
+                style={{
+                  backgroundImage: `url(${selectedProject.image})`,
+                  backgroundSize: 'contain',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundColor: 'var(--bg-primary)',
+                }}
+              />
             ) : (
               <div
                 className={styles.modalImage}
