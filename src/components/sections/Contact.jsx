@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 import { SOCIAL_LINKS } from '../../utils/constants'
+import { EMAILJS_CONFIG } from '../../utils/emailjs.config'
 import Button from '../common/Button'
 import Magnetic from '../common/Magnetic'
 import TextReveal from '../common/TextReveal'
@@ -17,6 +18,7 @@ export default function Contact() {
   const [errors, setErrors] = useState({})
   const [sending, setSending] = useState(false)
   const [sent, setSent] = useState(false)
+  const [sendError, setSendError] = useState(false)
 
   const validate = useCallback(() => {
     const e = {}
@@ -31,6 +33,7 @@ export default function Contact() {
     const { name, value } = e.target
     setForm(prev => ({ ...prev, [name]: value }))
     setErrors(prev => ({ ...prev, [name]: undefined }))
+    setSendError(false)
   }, [])
 
   const handleSubmit = useCallback(async (e) => {
@@ -40,13 +43,58 @@ export default function Contact() {
       setErrors(errs)
       return
     }
+
+    // Provera da li su EmailJS podaci uneti
+    if (
+      EMAILJS_CONFIG.SERVICE_ID === 'YOUR_SERVICE_ID' ||
+      EMAILJS_CONFIG.TEMPLATE_ID === 'YOUR_TEMPLATE_ID' ||
+      EMAILJS_CONFIG.PUBLIC_KEY === 'YOUR_PUBLIC_KEY'
+    ) {
+      setSending(true)
+      await new Promise(r => setTimeout(r, 800))
+      setSending(false)
+      setSendError(true)
+      console.warn('EmailJS nije povezan. Unesi SERVICE_ID, TEMPLATE_ID i PUBLIC_KEY u src/utils/emailjs.config.js')
+      return
+    }
+
     setSending(true)
-    await new Promise(r => setTimeout(r, 1500))
-    setSending(false)
-    setSent(true)
-    setForm({ name: '', email: '', phone: '', projectType: '', message: '' })
-    setTimeout(() => setSent(false), 4000)
-  }, [validate])
+    setSendError(false)
+
+    try {
+      const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          service_id: EMAILJS_CONFIG.SERVICE_ID,
+          template_id: EMAILJS_CONFIG.TEMPLATE_ID,
+          user_id: EMAILJS_CONFIG.PUBLIC_KEY,
+          template_params: {
+            from_name: form.name,
+            from_email: form.email,
+            phone: form.phone || '-',
+            project_type: form.projectType || '-',
+            message: form.message,
+            to_email: EMAILJS_CONFIG.TO_EMAIL
+          }
+        })
+      })
+
+      if (!response.ok) {
+        const text = await response.text()
+        throw new Error(text)
+      }
+
+      setSending(false)
+      setSent(true)
+      setForm({ name: '', email: '', phone: '', projectType: '', message: '' })
+      setTimeout(() => setSent(false), 5000)
+    } catch (err) {
+      setSending(false)
+      setSendError(true)
+      console.error('Greška pri slanju poruke:', err)
+    }
+  }, [validate, form])
 
   return (
     <section id="contact" className={styles.section}>
@@ -138,6 +186,16 @@ export default function Contact() {
               animate={{ opacity: 1, y: 0 }}
             >
               {t('contact.form.success')}
+            </motion.div>
+          )}
+
+          {sendError && (
+            <motion.div
+              className={styles.sendError}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+            >
+              {t('contact.form.error')}
             </motion.div>
           )}
         </form>
